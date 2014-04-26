@@ -1,4 +1,4 @@
-== README
+## RRUSA - Students Against Violence Project
 
 ### Initial application architecture
 
@@ -7,14 +7,14 @@
 * Neat grid
 
 #### Back-end
-_Models_
+__Models__
 * Event (Date, time, title)
 * Resource (Name, summary, URL)
 * Contact (singleton with various contact attributes)
 * Quotes (quote, source)
 * Stats (number_of, total, content)
 
-_Controller only_
+__Controller only__
 * Pages
 
 #### Maintenance
