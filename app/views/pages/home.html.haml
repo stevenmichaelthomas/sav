@@ -1,2 +1,17 @@
+= content_for :javascripts, javascript_include_tag('pages/home')
+
+%section.home-hero#stats-circles{data: { number: 1, total: 3 }}
+  .hero-text
+    %h1 1 <span>in</span> 3
+    %h2 women have been subjected to gender-based violence in their lives
+
+/ Resources
 .container
-  Hello
+  - @resources.each do |resource|
+    .home-resource
+      %div
+        = link_to resource.title, resource.url
+      %div
+        = resource.summary
+      %div
+        = resource.phone

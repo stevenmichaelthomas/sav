@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Resource.create(
+  title: "Royal Roads Counselling Service",
+  summary: "A voluntary, free personal counselling service to provide
+            confidential information and referrals, brief counselling and
+            support or guidance.",
+  url: "https://student.myrru.royalroads.ca/student-services/counselling-services",
+  phone: "250-474-2303 or Toll-free 1-877-662-6706"
+)
