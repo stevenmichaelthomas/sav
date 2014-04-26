@@ -1,0 +1,9 @@
+development:
+  database: sav_development
+  adapter: postgresql
+  encoding: unicode
+
+test:
+  database: sav_test
+  adapter: postgresql
+  encoding: unicode
