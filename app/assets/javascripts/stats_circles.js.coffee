@@ -1,5 +1,5 @@
 class @StatsCircles
-  @CIRCLE_COUNT: 100
+  @CIRCLE_COUNT: 500
 
   constructor: (@el) ->
     @circles = []
@@ -25,6 +25,7 @@ class @StatsCircles
       .attr('width', @width)
       .attr('height', @height)
 
+    sizesArray = [8, 10, 12, 14, 16]
     @data =
       for x in [0..@constructor.CIRCLE_COUNT]
         {
@@ -32,10 +33,11 @@ class @StatsCircles
           y: if x == 0 then @height / 2 else @height * Math.random()
           vbX: 0
           vbY: 0
-          radius: if x <= @active_percentage then 14 else 12
+          radius: sizesArray[Math.floor(Math.random() * sizesArray.length)];
           color: if x == 0
                    @colors[2]
-                 else if x <= @active_percentage
+                   # LOL change this to calculate dynamically
+                 else if x <= 169
                    @colors[0]
                  else
                    @colors[1]
@@ -53,8 +55,8 @@ class @StatsCircles
         .attr('r', (d) -> d.radius)
 
     force = d3.layout.force()
-        .gravity(.04)
-        .charge((d, i) -> if i then -20 else -2000)
+        .gravity(.02)
+        .charge((d, i) -> if i then -10 else -1200)
         .size([@width, @height])
         .nodes(@data)
         .on('tick', @_tick)
