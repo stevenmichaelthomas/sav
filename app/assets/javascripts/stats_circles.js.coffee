@@ -32,7 +32,7 @@ class @StatsCircles
           y: if x == 0 then @height / 2 else @height * Math.random()
           vbX: 0
           vbY: 0
-          radius: if x <= @active_percentage then 20 else 16
+          radius: if x <= @active_percentage then 14 else 12
           color: if x == 0
                    @colors[2]
                  else if x <= @active_percentage
@@ -54,7 +54,7 @@ class @StatsCircles
 
     force = d3.layout.force()
         .gravity(.04)
-        .charge((d, i) -> if i then -40 else -2000)
+        .charge((d, i) -> if i then -20 else -2000)
         .size([@width, @height])
         .nodes(@data)
         .on('tick', @_tick)

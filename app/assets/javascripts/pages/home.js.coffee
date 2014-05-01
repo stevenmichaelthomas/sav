@@ -3,11 +3,7 @@
 
 homeHero = document.getElementById 'stats-circles'
 
-console.log(homeHero)
-
 setTimeout ->
   circles = new StatsCircles(homeHero)
   circles.render()
 , 1
-
-

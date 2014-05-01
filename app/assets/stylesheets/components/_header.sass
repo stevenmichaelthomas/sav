@@ -1,0 +1,41 @@
+$header-height: 60px
+$logo-size: 100px
+$nav-link-color: #42a1b0
+
+.site-header
+  position: fixed
+  width: 100%
+  height: $header-height
+  background: white
+  background: rgba(white, 0.75)
+  z-index: 9999
+
+  .container
+    position: relative
+
+  #logo
+    position: absolute
+    left: 0
+    top: 0
+    content: ''
+    background: #434858
+    width: $logo-size
+    height: $logo-size
+
+    // Temp until we actually have the logo
+    text-align: center
+
+    > a
+      line-height: $logo-size
+      color: #FFF
+
+  nav
+    float: right
+    line-height: $header-height
+
+    > a
+      color: $nav-link-color
+      text-transform: uppercase
+      font-size: em(14)
+      padding: 10px 16px
+

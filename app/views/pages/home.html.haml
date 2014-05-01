@@ -1,17 +1,45 @@
 = content_for :javascripts, javascript_include_tag('pages/home')
 
 %section.home-hero#stats-circles{data: { number: 1, total: 3 }}
-  .hero-text
-    %h1 1 <span>in</span> 3
-    %h2 women have been subjected to gender-based violence in their lives
+  .container
+    .hero-text
+      %h1 1 <span>in</span> 3
+      %h2 women have been subjected to gender-based violence in their lives
 
-/ Resources
-.container
-  - @resources.each do |resource|
-    .home-resource
-      %div
-        = link_to resource.title, resource.url
-      %div
-        = resource.summary
-      %div
-        = resource.phone
+  .hero-link
+    .container
+      = link_to "#" do
+        .hero-link-source Report of the Secretary-General, General Assembly, 2006.
+        .hero-link-more Learn more
+
+%section.home-about
+  .container
+    .home-about-carousel
+      .carousel-item
+        .home-about-text
+          %h2 Students against violence
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+
+        .home-about-image= image_tag "http://placehold.it/440x260"
+
+      .carousel-nav
+        <a href="#" class="active"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+
+%section.home-resources
+  .container
+    - @resources.each do |resource|
+      .home-resource
+        %div
+          = link_to resource.title, resource.url
+        %div
+          = resource.summary
+        %div
+          = resource.phone
