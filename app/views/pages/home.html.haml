@@ -1,17 +1,4 @@
 = content_for :javascripts, javascript_include_tag('pages/home')
-
-%section.home-hero#stats-circles{data: { number: 1, total: 3 }}
-  .container
-    .hero-text
-      %h1 1<span>in</span>3
-      %h2 women have been subjected to gender-based violence in their lives
-
-  .hero-link
-    .container
-      = link_to "#" do
-        .hero-link-source Report of the Secretary-General, General Assembly, 2006.
-        .hero-link-more Learn more
-
 %section.home-about
   .container
     .home-about-carousel
@@ -47,21 +34,3 @@
       .event-name Racism in politics @ RRUSA Headquarters
 
     = link_to "See all events", "#", class: "home-events-link"
-
-%section.home-section.home-resources
-  .container
-    %h2 Resources
-    %h3 read. learn. empower.
-
-  - @resources.in_groups_of(3).each do |group|
-    .container
-      - group.each do |resource|
-        .home-resource
-          = link_to resource.url, target: "_blank" do
-            .home-resource-title
-              = resource.title
-            .home-resource-summary
-              = resource.summary
-            .home-resource-contact
-              = resource.phone.html_safe
-
