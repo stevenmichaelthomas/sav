@@ -1,4 +1,20 @@
 = content_for :javascripts, javascript_include_tag('pages/home')
+
+%section.home-splash
+  .home-splash-content
+    %h1 Students Against Violence Project
+    %p
+      The SAV is a diverse group of people who are a part of the Engaging Young
+      People to Prevent Violence Against Women project.  We are commited to X,
+      Y and Z.
+    %p
+      How can we help you?
+
+    .home-splash-choices
+      = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
+      = link_to "I need information", "#", data: { choice: 'information' }
+      = link_to "I need support.", "#", data: { choice: 'support' }
+
 %section.home-about
   .container
     .home-about-carousel

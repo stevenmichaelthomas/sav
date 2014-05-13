@@ -1,0 +1,66 @@
+.home-splash
+  opacity: 0
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: $color-blue
+  z-index: 1024
+  +transform(translateY(-30px))
+
+  &.animate
+    +transition(all 300ms ease)
+
+.home-splash-content
+  width: 600px
+  margin: 0 auto
+  padding: 100px 0
+  color: white
+
+  > p
+    font-size: 30px
+    line-height: 1.4em
+    margin-bottom: 36px
+
+.home-splash-choices
+  > a
+    position: relative
+    display: inline-block
+    width: 195px
+    padding: 14px 0
+    font-size: 30px
+    font-weight: $font-weight-bold
+    color: white
+    text-align: center
+    +transition(color 100ms ease)
+
+    &:hover
+      color: $color-orange
+
+      &:before
+        display: block
+
+    &:first-child
+      text-align: left
+
+      &:before
+        left: -50px
+
+    &:last-child
+      text-align: right
+
+      &:before
+        left: 30px
+
+    &:before
+      position: absolute
+      top: -5px
+      left: -15px
+      content: ''
+      display: none
+      width: 256px
+      height: 99px
+      background-image: asset-data-url('icon-choice-active.png')
+      z-index: -1
+

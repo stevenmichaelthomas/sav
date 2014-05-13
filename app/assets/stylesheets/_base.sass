@@ -3,3 +3,12 @@
 @import "grid-settings"
 @import "mixins"
 @import "variables"
+
+#image-preload > img
+  position: absolute
+  height: 1px
+  width: 1px
+  opacity: 0
+
+.wf-loading
+  +transition(none)
