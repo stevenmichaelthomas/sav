@@ -12,41 +12,80 @@
 
   .home-splash-choices
     = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
-    = link_to "I need information", "#", data: { choice: 'information' }
-    = link_to "I need support", "#", data: { choice: 'support' }
+    = link_to "I need information", "#", data: { choice: 'information' }, class: 'pink-lol'
+    = link_to "I need support", "#", data: { choice: 'support' }, class: 'purple-lol'
 
 %section.home-about
   .container
     .home-about-carousel
-      .carousel-item
+      .carousel-item.carousel-2.active
         .home-about-text
-          %h2 Students against violence
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+          %h2
+            Take Action! <br/> Know your rights!
+            <small>The SAV can help you X,Y and Z.</small>
 
-        .home-about-image= image_tag "http://placehold.it/440x260"
+      .carousel-item.carousel-1
+        .home-about-text
+          %h2
+            <span>4 out of 5</span> female undergraduate students said that they
+            have been victims of violence in a dating relationship
+          %p
+            W. DeKeseredy and K. Kelly, “The Incidence and Prevalence of Woman
+            Abuse in Canadian University and College"
+
+      .carousel-item.carousel-3
+        .home-about-text
+          %h2
+            Jackson Katz: <br/>
+            Violence against women—it's a men's issue
+          %span
+            A clarion call for us all — women and men — to call out unacceptable behavior and be leaders of change.
+
+      .carousel-item.carousel-4
+        .home-about-text
+          %h2
+            "Building personal and community safety is a shared responsibility
+            and students, staff and faculty help to contribute to making the
+            Royal Roads campus feel safety."
+
+
 
       .carousel-nav
-        <a href="#" class="active"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        = link_to "", "#", class: "carousel-arrow-left"
 
-%section.home-section.home-events
-  .container
-    %h2 Upcoming events
-    %h3 community. support.
+        = link_to "#", class: "carousel-nav-item active", data: { state: 0 } do
+          Your Rights and Access to Help If You Are a Victim of a Crime
 
-    .home-event
-      .event-date Friday, May 3rd
-      .event-name Protest @ the Commons
+        = link_to "#", class: "carousel-nav-item", data: { state: 1 } do
+          Sexual Violence on Campuses Fact Sheet
 
-    .home-event
-      .event-date Sunday, May 5th
-      .event-name Racism in politics @ RRUSA Headquarters
+        = link_to "#", class: "carousel-nav-item", data: { state: 2 } do
+          Violence against women—it's a men's issue
 
-    = link_to "See all events", "#", class: "home-events-link"
+        = link_to "#", class: "carousel-nav-item last", data: { state: 3 } do
+          Royal Roads Metrac Report 2013
+
+        = link_to "", "#", class: "carousel-arrow-right"
+
+    .home-splash-inline
+      .home-splash-choices
+        = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
+        = link_to "I need information", "#", data: { choice: 'information' }, class: 'pink-lol'
+        = link_to "I need support", "#", data: { choice: 'support' }, class: 'purple-lol'
+
+%footer
+  = image_tag 'footer-image.png'
+/ %section.home-section.home-events
+/   .container
+/     %h2 Upcoming events
+/     %h3 community. support.
+
+/     .home-event
+/       .event-date Friday, May 3rd
+/       .event-name Protest @ the Commons
+
+/     .home-event
+/       .event-date Sunday, May 5th
+/       .event-name Racism in politics @ RRUSA Headquarters
+
+/     = link_to "See all events", "#", class: "home-events-link"

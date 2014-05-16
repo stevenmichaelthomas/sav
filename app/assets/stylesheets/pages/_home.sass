@@ -1,58 +1,136 @@
+$carousel-nav-bg: #90d7d8
+$carousel-nav-item: #59C2C2
+
 .home-about
-  padding: 100px 0
+  padding: 80px 0 0
+  min-height: 1400px
 
 .home-about-carousel
   position: relative
-  background: rgba(#434859, 0.85)
   +clearfix
+  height: 475px
 
   .carousel-nav
+    background: $carousel-nav-bg
     position: absolute
-    bottom: 16px
+    height: 80px
+    bottom: 0
     left: 0
     width: 100%
     text-align: center
 
-    > a
-      content: ''
-      display: inline-block
-      width: 12px
-      height: 12px
-      background: white
-      border-radius: 10px
-      font-size: 3em
-      line-height: 16px
-      vertical-align: middle
-      margin: 0 6px
+  .carousel-nav-item
+    float: left
+    display: block
+    width: 236px
+    height: 80px
+    padding: 24px 18px
+    color: $carousel-nav-item
+    border-right: 1px solid $carousel-nav-item
+    +transition(all 300ms ease)
 
-      &.active
-        background: transparent
-        width: 16px
-        height: 16px
-        border: 2px solid #50c1d7
+    &.last
+      border-right: none
+
+    &.active, &:hover
+      background: #128684
+      color: white
+
+.carousel-arrow-left,
+.carousel-arrow-right
+  display: block
+  content: ''
+  height: 80px
+  width: 40px
+  float: left
+
+.carousel-arrow-left
+  background: asset-data-url('arrow-left.png') no-repeat center
+
+.carousel-arrow-right
+  background: asset-data-url('arrow-right.png') no-repeat center
+
+.carousel-item
+  opacity: 0
+  height: 475px
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  +transition(opacity 300ms ease)
+
+  &.active
+    opacity: 1
+
+.carousel-1
+  background: image-url('carousel-1.png') no-repeat top center
+
+.carousel-2
+  background: image-url('carousel-2.png') no-repeat top center
+
+  .home-about-text
+    padding-top: 140px
+
+    > h2
+      font-size: em(28)
+      line-height: 1.1em
+
+      > small
+        display: block
+        font-weight: normal
+        font-size: em(22, 28)
+
+.carousel-3
+  background: image-url('carousel-3.png') no-repeat top center
+
+  .home-about-text
+    position: absolute
+    right: 60px
+
+    > h2
+      font-size: em(24)
+      color: white
+      margin-bottom: 24px
+      line-height: 1.2em
+
+    > span
+      color: #ee2553
+      font-size: em(18)
+
+.carousel-4
+  background: image-url('carousel-4.png') no-repeat top center
+
+  .home-about-text
+    padding-top: 130px
+
+    > h2
+      color: #ffa813
 
 .home-about-text
   +span-columns(5 of 12)
-  padding: 60px 50px 80px 60px
+  padding: 80px 0 80px 60px
 
   > h2
-    margin-bottom: 18px
-    font-size: em(36)
-    font-weight: bold
-    text-transform: uppercase
-    color: $color-orange
-    line-height: 0.9em
+    margin-bottom: 72px
+    font-size: em(22)
+    font-weight: $font-weight-bold
+    color: #ee2553
+    line-height: 1.4em
+
+    > span
+      color: #9d2149
+      font-size: em(24)
 
   > p
-    color: white
-    line-height: 1.4em
+    color: #f4386c
+    line-height: 1.2em
+    font-size: em(14)
 
 .home-about-image
   +span-columns(7 of 12)
   padding: 70px 0 60px
   margin: 20px 0
-  min-height: 410px
-  background-image: image-url('photo-cutout.png')
+  min-height: 400px
   background-repeat: no-repeat
   background-position: center top
   text-align: center
@@ -132,3 +210,9 @@
   padding: 0 24px 18px
   line-height: 1.4
   font-size: em(18)
+
+footer
+  padding: 60px 36px
+  background: #282828
+  text-align: right
+

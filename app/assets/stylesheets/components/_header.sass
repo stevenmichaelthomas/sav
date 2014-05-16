@@ -1,13 +1,14 @@
-$header-height: 60px
-$logo-size: 100px
-$nav-link-color: #42a1b0
+$header-height: 80px
+$nav-1: #FDBB41
+$nav-2: #F6772C
+$nav-3: #F13C6E
+$nav-4: #AD5193
 
 .site-header
   position: fixed
   width: 100%
   height: $header-height
   background: white
-  background: rgba(white, 0.75)
   z-index: 1023
 
   .container
@@ -19,23 +20,53 @@ $nav-link-color: #42a1b0
     top: 0
     content: ''
     background: #434858
-    width: $logo-size
-    height: $logo-size
+    width: $header-height
+    height: $header-height
 
     // Temp until we actually have the logo
     text-align: center
 
     > a
-      line-height: $logo-size
+      line-height: $header-height
       color: #FFF
 
   nav
-    float: right
     line-height: $header-height
 
     > a
-      color: $nav-link-color
-      text-transform: uppercase
+      float: right
+      display: inline-block
+      text-align: center
+      height: $header-height
+      width: $header-height
+      color: white
       font-size: em(14)
-      padding: 10px 16px
+      +transition(background-color 300ms ease)
 
+.nav-link-1
+  background: $nav-1
+
+  &:hover
+    color: $nav-1
+    background: asset-data-url('nav-1.png') white no-repeat center
+
+.nav-link-2
+  background: $nav-2
+
+  &:hover
+    color: $nav-2
+    background: asset-data-url('nav-2.png') white no-repeat center
+
+.nav-link-3
+  background: $nav-3
+
+  &:hover
+    color: $nav-3
+    background: asset-data-url('nav-3.png') white no-repeat center
+
+.nav-link-4
+  background: $nav-4
+
+  &:hover
+    color: $nav-4
+    background: asset-data-url('nav-4.png') white no-repeat center

@@ -3,6 +3,9 @@
 $body = $(document.body)
 
 $ ->
+  homeCarousel = new Carousel($('.home-about-carousel'))
+  homeCarousel.start()
+
   $('.home-splash').addClass('animate')
 
   $('.home-splash-choices').on 'click', 'a', (e) ->

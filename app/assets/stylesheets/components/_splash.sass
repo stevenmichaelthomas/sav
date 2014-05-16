@@ -12,6 +12,11 @@
   &.animate
     +transition(all 300ms ease)
 
+.home-splash-inline
+  background: $color-blue
+  position: relative
+  padding: 40px 0
+
 .home-splash-content
   width: 600px
   margin: 0 auto
@@ -38,9 +43,10 @@
     color: white
     text-align: center
     +transition(color 100ms ease)
+    z-index: 1
 
     &:hover
-      color: $color-orange
+      color: #F13C6E
 
       &:before
         display: block
@@ -55,4 +61,11 @@
       height: 99px
       background-image: asset-data-url('icon-choice-active.png')
       z-index: -1
+
+    &.pink-lol:hover
+      color: $color-orange
+
+    &.purple-lol:hover
+      color: #AD5193
+
 
