@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @resources = Resource.all
+  end
+
+  def support
+  end
+
+  def contact
   end
 end
