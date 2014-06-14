@@ -36,7 +36,9 @@ $header-height: 80px
     .#{$item}
       background-color: map-get($key, background)
 
-      &:hover
+      &:hover,
+      &.active,
+      &:focus
         color: map-get($key, background)
         background: white no-repeat center center
         background-image: asset-data-url("#{$item}.png")
