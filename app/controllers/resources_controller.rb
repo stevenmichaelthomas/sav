@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
   def index
-    @resources = Resource.all
+    @categories = Category.all
   end
 end

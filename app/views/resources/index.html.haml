@@ -1,7 +1,9 @@
 %h1 Resources#index
 
-- @resources.each do |resource|
-  %p= resource.title
-  %p= resource.summary
-  %p= resource.url
-  %p= resource.phone
+- @categories.each do |category|
+  %h1= category.name
+  - category.resources.each do |resource|
+    %p= resource.title
+    %p= resource.summary
+    %p= resource.url
+    %p= resource.phone

@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Category.create(
+  name: "On campus resources"
+)
+
 9.times do
   Resource.create(
     title: "Royal Roads Counselling Service",
@@ -13,7 +17,8 @@
               confidential information and referrals, brief counselling and
               support or guidance.",
     url: "https://student.myrru.royalroads.ca/student-services/counselling-services",
-    phone: "250-474-2303 <br/> Toll-free 1-877-662-6706"
+    phone: "250-474-2303 <br/> Toll-free 1-877-662-6706",
+    category: Category.first
   )
 end
 
