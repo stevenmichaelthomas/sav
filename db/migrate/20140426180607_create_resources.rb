@@ -1,6 +1,6 @@
 class CreateResources < ActiveRecord::Migration
   def change
-    create_table :resources do |t|
+    create_table :tools do |t|
       t.string :title
       t.text :summary
       t.string :url

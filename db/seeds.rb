@@ -11,7 +11,7 @@ Category.create(
 )
 
 9.times do
-  Resource.create(
+  Tool.create(
     title: "Royal Roads Counselling Service",
     summary: "A voluntary, free personal counselling service to provide
               confidential information and referrals, brief counselling and

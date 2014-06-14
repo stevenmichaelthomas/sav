@@ -1,4 +1,4 @@
-class ResourcesController < ApplicationController
+class ToolsController < ApplicationController
   def index
     @categories = Category.all
   end

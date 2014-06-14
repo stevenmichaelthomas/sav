@@ -11,6 +11,6 @@
 #  updated_at :datetime
 #
 
-class Resource < ActiveRecord::Base
+class Tool < ActiveRecord::Base
   belongs_to :category
 end
