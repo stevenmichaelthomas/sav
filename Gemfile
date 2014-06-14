@@ -2,9 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'coffee-rails', '~> 4.0.0'
 gem "compass", github: "chriseppstein/compass"
 gem 'compass-rails', github: "Compass/compass-rails"
+gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'pg'
