@@ -1,40 +1,10 @@
 $carousel-nav-bg: #90d7d8
 $carousel-nav-item: #59C2C2
 
-.home-about
-  padding: 80px 0 0
-  min-height: 1400px
-
 .home-about-carousel
   position: relative
   +clearfix
-  height: 475px
-
-  .carousel-nav
-    background: $carousel-nav-bg
-    position: absolute
-    height: 80px
-    bottom: 0
-    left: 0
-    width: 100%
-    text-align: center
-
-  .carousel-nav-item
-    float: left
-    display: block
-    width: 236px
-    height: 80px
-    padding: 24px 18px
-    color: $carousel-nav-item
-    border-right: 1px solid $carousel-nav-item
-    +transition(all 300ms ease)
-
-    &.last
-      border-right: none
-
-    &.active, &:hover
-      background: #128684
-      color: white
+  height: 400px
 
 .carousel-arrow-left,
 .carousel-arrow-right
@@ -63,153 +33,13 @@ $carousel-nav-item: #59C2C2
     opacity: 1
 
 .carousel-1
-  background: image-url('carousel-1.png') no-repeat top center
 
 .carousel-2
-  background: image-url('carousel-2.png') no-repeat top center
-
-  .home-about-text
-    padding-top: 140px
-
-    > h2
-      font-size: em(28)
-      line-height: 1.1em
-
-      > small
-        display: block
-        font-weight: normal
-        font-size: em(22, 28)
 
 .carousel-3
-  background: image-url('carousel-3.png') no-repeat top center
-
-  .home-about-text
-    position: absolute
-    right: 60px
-
-    > h2
-      font-size: em(24)
-      color: white
-      margin-bottom: 24px
-      line-height: 1.2em
-
-    > span
-      color: #ee2553
-      font-size: em(18)
 
 .carousel-4
-  background: image-url('carousel-4.png') no-repeat top center
 
-  .home-about-text
-    padding-top: 130px
-
-    > h2
-      color: #ffa813
-
-.home-about-text
-  +span-columns(5 of 12)
-  padding: 80px 0 80px 60px
-
-  > h2
-    margin-bottom: 72px
-    font-size: em(22)
-    font-weight: $font-weight-bold
-    color: #ee2553
-    line-height: 1.4em
-
-    > span
-      color: #9d2149
-      font-size: em(24)
-
-  > p
-    color: #f4386c
-    line-height: 1.2em
-    font-size: em(14)
-
-.home-about-image
-  +span-columns(7 of 12)
-  padding: 70px 0 60px
-  margin: 20px 0
-  min-height: 400px
-  background-repeat: no-repeat
-  background-position: center top
-  text-align: center
-
-.home-section
-  h2
-    font-size: em(36)
-    font-weight: 900
-
-  h3
-    margin-bottom: 28px
-    font-size: em(28)
-    font-style: italic
-    font-weight: 300
-
-
-.home-events
-  padding: 60px 0
-
-  h2, h3
-    color: #FFF
-
-  .event-date
-    float: left
-    width: 33.33%
-    padding: 18px 28px
-    margin-right: 0
-    color: #c7406f
-    text-transform: uppercase
-    font-size: em(22)
-    font-weight: bold
-    background-color: #50c1d7
-    border-bottom: 1px solid darken(#50c1d7, 10%)
-
-  .event-name
-    float: left
-    width: 66.67%
-    +span-columns(8 of 12)
-    padding: 18px 28px
-    font-size: em(22)
-    font-weight: bold
-    color: #333
-    background-color: #eaebe8
-    border-bottom: 1px solid darken(#eaebe8, 10%)
-    white-space: nowrap
-    overflow: hidden
-    text-overflow: ellipsis
-
-.home-events-link
-  float: right
-  padding: 20px 16px 14px
-  color: #f1f1f1
-  font-size: em(20)
-
-.home-resources
-  padding: 60px 0
-
-.home-resource
-  +span-columns(4 of 12)
-  margin-bottom: 28px
-  background: #ccc
-
-  > a
-    color: #666
-
-.home-resource-title
-  padding: 24px 24px
-  font-size: em(18)
-  background: #eaebe8
-  color: #666
-
-.home-resource-summary
-  padding: 18px 24px
-  line-height: 1.4
-
-.home-resource-contact
-  padding: 0 24px 18px
-  line-height: 1.4
-  font-size: em(18)
 
 footer
   padding: 60px 36px

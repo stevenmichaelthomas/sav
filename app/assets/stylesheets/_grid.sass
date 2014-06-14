@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// Magic (Responsive) Susy Grid System
+// ----------------------------------------------------------------------------
+
+$show-grid-backgrounds: false
+
+// Define mobile-first grid constants.
+$total-columns:  6
+$column-width:   64px
+$column-padding: 12px
+$gutter-width:   18px
+$grid-padding:   12px
+
+$container-max-width: ($column-width * 12) + ($gutter-width * 11)
+
+$container-style: fluid
+.container
+  max-width: $container-max-width
+
+$break-mobile:     6 568px
+$break-tablet:     569px 8 1023px
+$break-desktop:    1024px 12
+$break-not-mobile: 569px
+
+
+//-----------------------------------------------------------------------------
+// Global Grid Styles
+//-----------------------------------------------------------------------------
+
+.container
+  @include container($total-columns)
+  @include susy-grid-background
+
+$layouts: $break-mobile, $break-tablet, $break-desktop
+@each $layout in $layouts
+  @include at-breakpoint($layout)
+    .container
+      @include set-container-width
+      @include susy-grid-background

@@ -1,20 +1,26 @@
-@import "global-reset"
-@import "bourbon"
-@import "grid-settings"
+@import "compass"
+@import "susyone"
+@import "grid"
 @import "mixins"
-@import "variables"
+@import "maps"
 
-.page-container
-  width: 1024px
-  max-width: 100%
-  background: white
-  margin: 0 auto
++global-reset
 
-#image-preload > img
-  position: absolute
-  height: 1px
-  width: 1px
-  opacity: 0
+*
+  +box-sizing(border-box)
 
-.wf-loading
-  +transition(none)
+//==============================================================================
+// Fonts
+//==============================================================================
+
+$font-primary: 'futura-pt', Helvetica, sans-serif
+$font-weight-normal: 400
+$font-weight-bold: 700
+
+//==============================================================================
+// Colors
+//==============================================================================
+
+$color-orange: #e4a02d
+$color-blue: #4fc2c2
+

@@ -1,24 +1,12 @@
 $header-height: 80px
-$nav-1: #FDBB41
-$nav-2: #F6772C
-$nav-3: #F13C6E
-$nav-4: #AD5193
 
 .site-header
-  position: fixed
-  width: 100%
   height: $header-height
   background: white
   z-index: 1023
 
-  .container
-    position: relative
-
   #logo
-    position: absolute
-    left: 0
-    top: 0
-    content: ''
+    float: left
     background: #434858
     width: $header-height
     height: $header-height
@@ -43,30 +31,11 @@ $nav-4: #AD5193
       font-size: em(14)
       +transition(background-color 300ms ease)
 
-.nav-link-1
-  background: $nav-1
+  @each $item, $key in $nav-map
+    .#{$item}
+      background-color: map-get($key, background)
 
-  &:hover
-    color: $nav-1
-    background: asset-data-url('nav-1.png') white no-repeat center
-
-.nav-link-2
-  background: $nav-2
-
-  &:hover
-    color: $nav-2
-    background: asset-data-url('nav-2.png') white no-repeat center
-
-.nav-link-3
-  background: $nav-3
-
-  &:hover
-    color: $nav-3
-    background: asset-data-url('nav-3.png') white no-repeat center
-
-.nav-link-4
-  background: $nav-4
-
-  &:hover
-    color: $nav-4
-    background: asset-data-url('nav-4.png') white no-repeat center
+      &:hover
+        color: map-get($key, background)
+        background: white no-repeat center center
+        background-image: asset-data-url("#{$item}.png")
