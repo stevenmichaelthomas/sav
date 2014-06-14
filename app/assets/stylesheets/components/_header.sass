@@ -7,7 +7,8 @@ $header-height: 80px
 
   #logo
     float: left
-    background: #434858
+    +inline-background-image-retina('logo.png')
+    background-position: center left
     width: $header-height
     height: $header-height
 
@@ -15,8 +16,21 @@ $header-height: 80px
     text-align: center
 
     > a
+      display: block
+      width: $header-height
+      height: $header-height
       line-height: $header-height
       color: #FFF
+
+  span
+    color: #00529b
+    font-size: 19px
+    display: inline-block
+    line-height: $header-height
+    float: left
+
+    > strong
+      font-weight: $font-weight-semibold
 
   nav
     line-height: $header-height
@@ -29,7 +43,7 @@ $header-height: 80px
       height: $header-height
       width: $header-height
       color: white
-      font-size: em(14)
+      font-size: 14px
       +transition(background-color 300ms ease)
 
   @each $item, $key in $nav-map

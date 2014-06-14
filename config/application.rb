@@ -27,5 +27,9 @@ module Sav
 
     config.generators.stylesheets = false
     config.generators.javascripts = false
+
+    if config.respond_to?(:sass)
+      require "#{config.root}/lib/sass_extensions.rb"
+    end
   end
 end
