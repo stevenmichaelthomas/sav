@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140614194622) do
     t.datetime "date"
     t.string   "name"
     t.string   "location"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
