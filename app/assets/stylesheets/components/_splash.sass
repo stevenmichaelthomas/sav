@@ -1,21 +1,15 @@
 .home-splash-inline
   background: $color-blue
   position: relative
-  padding: 40px 0
-
-
+  padding: $gutter 0
 
 .home-splash-choices
-  width: 700px
-  margin: 0 auto
-
   > a
+    @extend .heading-4
     position: relative
     display: inline-block
-    width: 190px
-    margin: 0 14px
+    width: 33%
     padding: 14px 0
-    font-size: 30px
     font-weight: $font-weight-bold
     color: white
     text-align: center
@@ -23,26 +17,12 @@
     z-index: 1
 
     &:hover
-      color: #F13C6E
-
-      &:before
-        display: block
-
-    &:before
-      position: absolute
-      top: -5px
-      left: -15px
-      content: ''
-      display: none
-      width: 256px
-      height: 99px
-      background-image: asset-data-url('icon-choice-active.png')
-      z-index: -1
+      color: $color-red
 
     &.pink-lol:hover
       color: $color-orange
 
     &.purple-lol:hover
-      color: #AD5193
+      color: $color-purple
 
 

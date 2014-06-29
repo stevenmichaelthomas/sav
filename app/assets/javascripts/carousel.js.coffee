@@ -78,6 +78,8 @@ class @Carousel
     @next()
 
   _onClick: (event) =>
+    event.preventDefault()
+
     if state = event.currentTarget.getAttribute('data-state')
       @to(~~parseInt(state, 10))
       @stop()
