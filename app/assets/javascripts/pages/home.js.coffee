@@ -3,4 +3,5 @@
 $body = $(document.body)
 
 $ ->
-  homeCarousel = new Carousel($('.home-about-carousel'))
+  homeCarousel = new Carousel($('.home-carousel'))
+  homeCarousel.start()

@@ -2,44 +2,33 @@
 
 %section.home-about
   .container
-    .home-about-carousel
-      .carousel-item.carousel-2.active
-        .home-about-text
-          %h2
-            Take Action! <br/> Know your rights!
-            <small>The SAV can help you X,Y and Z.</small>
+    .home-carousel
+      .carousel-item.carousel-1.active
+        %h2
+          Heading 1
+        %p
+          Some text
 
-      .carousel-item.carousel-1
-        .home-about-text
-          %h2
-            <span>4 out of 5</span> female undergraduate students said that they
-            have been victims of violence in a dating relationship
-          %p
-            W. DeKeseredy and K. Kelly, “The Incidence and Prevalence of Woman
-            Abuse in Canadian University and College"
+      .carousel-item.carousel-2
+        %h2
+          Heading 2
+        %p
+          Some text
 
       .carousel-item.carousel-3
-        .home-about-text
-          %h2
-            Jackson Katz: <br/>
-            Violence against women—it's a men's issue
-          %span
-            A clarion call for us all — women and men — to call out unacceptable behavior and be leaders of change.
+        %h2
+          Heading 3
+        %p
+          Some text
 
-      .carousel-item.carousel-4
-        .home-about-text
-          %h2
-            "Building personal and community safety is a shared responsibility
-            and students, staff and faculty help to contribute to making the
-            Royal Roads campus feel safety."
+      = link_to '', "#", class: "carousel-arrow-left"
+      = link_to "", "#", class: "carousel-arrow-right"
 
       .carousel-nav
-        = link_to '', "#", class: "carousel-arrow-left"
         = link_to '', "#", class: "carousel-nav-item active", data: { state: 0 }
         = link_to '', "#", class: "carousel-nav-item", data: { state: 1 }
         = link_to '', "#", class: "carousel-nav-item", data: { state: 2 }
-        = link_to '', "#", class: "carousel-nav-item last", data: { state: 3 }
-        = link_to "", "#", class: "carousel-arrow-right"
+
 
     .home-splash-inline
       .home-splash-choices

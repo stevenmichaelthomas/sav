@@ -1,10 +1,11 @@
 $carousel-nav-bg: #90d7d8
 $carousel-nav-item: #59C2C2
 
-.home-about-carousel
+.home-carousel
   position: relative
   +clearfix
   height: 400px
+  width: 100%
 
 .carousel-arrow-left,
 .carousel-arrow-right
@@ -12,17 +13,21 @@ $carousel-nav-item: #59C2C2
   content: ''
   height: 80px
   width: 40px
-  float: left
+  position: absolute
+  top: 50%
+  margin-top: -40px
 
 .carousel-arrow-left
   background: asset-data-url('arrow-left.png') no-repeat center
+  left: 0
 
 .carousel-arrow-right
   background: asset-data-url('arrow-right.png') no-repeat center
+  right: 0
 
 .carousel-item
   opacity: 0
-  height: 475px
+  height: 400px
   width: 100%
   position: absolute
   top: 0
@@ -32,14 +37,23 @@ $carousel-nav-item: #59C2C2
   &.active
     opacity: 1
 
-.carousel-1
+.carousel-nav
+  position: absolute
+  bottom: 30px
+  width: 100%
+  text-align: center
 
-.carousel-2
+.carousel-nav-item
+  content: ''
+  width: 12px
+  height: 12px
+  margin: 4px
+  border-radius: 8px
+  display: inline-block
+  background: pink
 
-.carousel-3
-
-.carousel-4
-
+  &.active
+    background: blue
 
 footer
   padding: 60px 36px
