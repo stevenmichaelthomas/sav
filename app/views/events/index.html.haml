@@ -14,4 +14,4 @@
         .event-column.event-date= event.date.strftime('%b %-d, %Y')
         .event-column.event-name= event.name
         .event-column.event-location= event.location
-        .event-column.event-address= event.address
+        .event-column.event-address= gmaps_link(event.address)
