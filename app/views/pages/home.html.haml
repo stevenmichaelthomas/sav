@@ -1,39 +1,40 @@
 = content_for :javascripts, javascript_include_tag('pages/home')
 
-%section.home-about
-  .container
-    .home-carousel
-      .carousel-item.carousel-1.active
-        %h2
-          Heading 1
-        %p
-          Some text
 
-      .carousel-item.carousel-2
-        %h2
-          Heading 2
-        %p
-          Some text
+.container
+  .home-carousel
+    .carousel-item.carousel-1.active
+      %h2
+        Heading 1
+      %p
+        Some text
 
-      .carousel-item.carousel-3
-        %h2
-          Heading 3
-        %p
-          Some text
+    .carousel-item.carousel-2
+      %h2
+        Heading 2
+      %p
+        Some text
 
-      = link_to '', "#", class: "carousel-arrow-left"
-      = link_to "", "#", class: "carousel-arrow-right"
+    .carousel-item.carousel-3
+      %h2
+        Heading 3
+      %p
+        Some text
 
-      .carousel-nav
-        = link_to '', "#", class: "carousel-nav-item active", data: { state: 0 }
-        = link_to '', "#", class: "carousel-nav-item", data: { state: 1 }
-        = link_to '', "#", class: "carousel-nav-item", data: { state: 2 }
+    = link_to '', "#", class: "carousel-arrow-left"
+    = link_to "", "#", class: "carousel-arrow-right"
 
+    .carousel-nav
+      = link_to '', "#", class: "carousel-nav-item active", data: { state: 0 }
+      = link_to '', "#", class: "carousel-nav-item", data: { state: 1 }
+      = link_to '', "#", class: "carousel-nav-item", data: { state: 2 }
 
-    .home-splash-inline
-      .home-splash-choices
-        = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
-        = link_to "I need information", "#", data: { choice: 'information' }, class: 'pink-lol'
-        = link_to "I need support", "#", data: { choice: 'support' }, class: 'purple-lol'
+  .home-splash-inline
+    .home-splash-choices
+      = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
+      = link_to "I need information", "#", data: { choice: 'information' }, class: 'pink-lol'
+      = link_to "I need support", "#", data: { choice: 'support' }, class: 'purple-lol'
+
+  .page-section
 
 %footer

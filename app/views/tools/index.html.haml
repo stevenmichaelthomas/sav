@@ -1,12 +1,13 @@
 .container
-  .page-heading
+  .page-hero
     %h1 Resources
 
-  - @categories.each do |category|
-    %h2= category.name
-    - category.tools.each do |tool|
-      .resource
-        %p= tool.title
-        %p= tool.summary
-        %p= tool.url
-        %p= tool.phone
+  .page-section
+    - @categories.each do |category|
+      %h2= category.name
+      - category.tools.each do |tool|
+        .resource
+          %p= tool.title
+          %p= tool.summary
+          %p= tool.url
+          %p= tool.phone

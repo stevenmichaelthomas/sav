@@ -1,17 +1,18 @@
 .container
-  .page-heading
-    %h1 Events
+  .page-hero
+    %h1 Upcoming Events
 
-  .events
-    .event-headings
-      .event-column Date
-      .event-column Name
-      .event-column Location
-      .event-column Address
+  .page-section
+    .events
+      .event-headings
+        .event-column Date
+        .event-column Name
+        .event-column Location
+        .event-column Address
 
-    - @events.each do |event|
-      .event
-        .event-column.event-date= event.date.strftime('%b %-d, %Y')
-        .event-column.event-name= event.name
-        .event-column.event-location= event.location
-        .event-column.event-address= gmaps_link(event.address)
+      - @events.each do |event|
+        .event
+          .event-column.event-date= event.date.strftime('%b %-d, %Y')
+          .event-column.event-name= event.name
+          .event-column.event-location= event.location
+          .event-column.event-address= gmaps_link(event.address)
