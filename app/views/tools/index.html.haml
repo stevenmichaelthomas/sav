@@ -3,9 +3,10 @@
     %h1 Resources
 
   - @categories.each do |category|
-    %h1= category.name
+    %h2= category.name
     - category.tools.each do |tool|
-      %p= tool.title
-      %p= tool.summary
-      %p= tool.url
-      %p= tool.phone
+      .resource
+        %p= tool.title
+        %p= tool.summary
+        %p= tool.url
+        %p= tool.phone
