@@ -6,10 +6,17 @@
   display: table-row
 
   > .event-column
+    @extend .heading-4
     font-weight: $font-weight-semibold
+    background: $color-yellow
+    padding: $gutter / 3 8px
 
 .event
   display: table-row
 
+
 .event-column
+  @extend .heading-5
   display: table-cell
+  padding: $gutter / 2 8px
+  border-bottom: 1px solid $color-yellow

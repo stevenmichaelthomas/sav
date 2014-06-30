@@ -12,4 +12,10 @@
 
 class Event < ActiveRecord::Base
   default_scope -> { order("events.date ASC") }
+
+  scope :upcoming, -> { where("date BETWEEN ? AND ?", Date.today, Date.today + 2.weeks) }
+
+  def date_str
+    date.strftime('%b %-d, %Y')
+  end
 end

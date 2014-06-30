@@ -35,6 +35,19 @@
       = link_to "I need information", resources_path, data: { choice: 'information' }, class: 'choice-information'
       = link_to "I need support", contact_path, data: { choice: 'support' }, class: 'choice-support'
 
+  - if @upcoming_events.present?
+    .page-section.section-events.home-events
+      %h2 Upcoming events
+      .events
+        - @upcoming_events.upcoming.each do |event|
+          .event
+            .event-column.event-date= event.date_str
+            .event-column.event-name= event.name
+            .event-column.event-location= event.location
+            .event-column.event-address= gmaps_link(event.address)
+
+      %h4= link_to "View all upcoming events", events_path
+
   .page-section
     .what-is-logo
       = image_tag 'logo-large@2x.png'
