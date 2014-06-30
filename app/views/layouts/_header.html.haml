@@ -4,7 +4,8 @@
     %span Students <strong>Against</strong> Violence
 
     %nav
-      = link_to "events", events_path, class: "nav-1 #{'active' if current_page?(events_path)}"
-      = link_to "resources", resources_path, class: "nav-2 #{'active' if current_page?(resources_path)}"
-      = link_to "support", support_path, class: "nav-3 #{'active' if current_page?(support_path)}"
-      = link_to "contact", contact_path, class: "nav-4 #{'active' if current_page?(contact_path)}"
+      = link_to "app", "#", class: "nav-1"
+      = link_to "events", events_path, class: "nav-2 #{'active' if current_page?(events_path)}"
+      = link_to "resources", resources_path, class: "nav-3 #{'active' if current_page?(resources_path)}"
+      = link_to "support", support_path, class: "nav-4 #{'active' if current_page?(support_path)}"
+      = link_to "contact", contact_path, class: "nav-5 #{'active' if current_page?(contact_path)}"

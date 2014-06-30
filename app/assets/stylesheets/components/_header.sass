@@ -45,6 +45,9 @@ $header-height: 80px
       font-size: 14px
       +transition(background-color 300ms ease)
 
+      &:hover
+        text-decoration: none
+
   @each $item, $key in $nav-map
     .#{$item}
       background-color: map-get($key, background)
