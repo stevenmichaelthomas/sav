@@ -2,11 +2,15 @@
   .page-hero.resources-hero
     = image_tag 'resources-stroke.png'
     %h1 Resources
+  .resources-nav
+    - @categories.each do |category|
+      = link_to category.name, "#" + category.anchor
 
   .page-section
     - colors = %w{blue yellow orange red purple}
     - @categories.each_with_index do |category, i|
-      %h2.resource-category-heading{class: "segment-#{colors[i] if i < colors.length}"}= category.name
+      %h2.resource-category-heading{class: "segment-#{colors[i] if i < colors.length}", id: category.anchor}
+        = category.name
       .resource-category
         - category.tools.each do |tool|
           .resource

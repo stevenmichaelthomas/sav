@@ -10,4 +10,8 @@
 
 class Category < ActiveRecord::Base
   has_many :tools
+
+  def anchor
+    name.split(' ')[0].downcase
+  end
 end
