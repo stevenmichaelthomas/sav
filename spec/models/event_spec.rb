@@ -6,6 +6,7 @@
 #  date       :datetime
 #  name       :string(255)
 #  location   :string(255)
+#  address    :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #

@@ -9,3 +9,9 @@
 
   .segment-box
     border-color: $color-yellow
+
+
+@each $key, $color in $colors-map
+  .segment-#{$key}
+    color: $color
+    border-color: $color

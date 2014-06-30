@@ -4,11 +4,13 @@
     %h1 Resources
 
   .page-section
-    - @categories.each do |category|
-      %h2= category.name
-      - category.tools.each do |tool|
-        .resource
-          %p= tool.title
-          %p= tool.summary
-          %p= tool.url
-          %p= tool.phone
+    - colors = %w{blue yellow orange red purple}
+    - @categories.each_with_index do |category, i|
+      %h2{class: "segment-#{colors[i] if i < colors.length}"}= category.name
+      .resource-category
+        - category.tools.each do |tool|
+          .resource
+            %p= tool.title
+            %p= tool.summary
+            %p= tool.url
+            %p= tool.phone

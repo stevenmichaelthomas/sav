@@ -1,14 +1,15 @@
 # == Schema Information
 #
-# Table name: resources
+# Table name: tools
 #
-#  id         :integer          not null, primary key
-#  title      :string(255)
-#  summary    :text
-#  url        :string(255)
-#  phone      :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  summary     :text
+#  url         :string(255)
+#  phone       :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  category_id :integer
 #
 
 class Tool < ActiveRecord::Base
