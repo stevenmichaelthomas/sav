@@ -1,13 +1,22 @@
 .section-support
-  background: $color-red
-  color: white
+  padding-top: $gutter * 3
 
 .support-this-fall
   +span-columns(7, 12)
 
+  h2
+    color: $color-red
+
 .support-sponsor
-  +span-columns(4, 12)
+  padding: $gutter
+  margin-top: -$gutter
+  background: $color-red
+  color: white
+  +span-columns(5, 12)
   +omega
+
+  h2
+    color: white
 
 .section-volunteer
   background: $color-yellow
