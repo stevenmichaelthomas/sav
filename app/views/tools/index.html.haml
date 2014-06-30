@@ -10,7 +10,6 @@
       .resource-category
         - category.tools.each do |tool|
           .resource
-            %p= tool.title
-            %p= tool.summary
-            %p= tool.url
-            %p= tool.phone
+            %h4= link_to tool.title, tool.url, target: "_blank"
+            %p.resource-summary= tool.summary
+            %p.resource-contact= tool.phone.html_safe
