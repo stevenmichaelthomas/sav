@@ -3,23 +3,20 @@
 
 .container
   .home-carousel
-    .carousel-item.carousel-1.active
+    .carousel-item.page-hero.carousel-1.active
+      = image_tag 'home-stroke1.png'
       %h2
-        Heading 1
-      %p
-        Some text
+        Building personal and community safety is a shared responsibility and
+        students, staff and faculty help to contribute to making the Royal Roads
+        campus feel safe
 
-    .carousel-item.carousel-2
+    .carousel-item.page-hero.carousel-2
       %h2
-        Heading 2
-      %p
-        Some text
+        Our Mission
 
-    .carousel-item.carousel-3
+    .carousel-item.page-hero.carousel-3
       %h2
-        Heading 3
-      %p
-        Some text
+        Check out our research
 
     = link_to '', "#", class: "carousel-arrow-left"
     = link_to "", "#", class: "carousel-arrow-right"
