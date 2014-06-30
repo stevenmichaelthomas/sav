@@ -31,10 +31,25 @@
 
   .home-splash-inline
     .home-splash-choices
-      = link_to "I want to volunteer", "#", data: { choice: 'volunteer' }
-      = link_to "I need information", "#", data: { choice: 'information' }, class: 'pink-lol'
-      = link_to "I need support", "#", data: { choice: 'support' }, class: 'purple-lol'
+      = link_to "I want to volunteer", support_path, data: { choice: 'volunteer', class: 'choice-volunteer' }
+      = link_to "I need information", resources_path, data: { choice: 'information' }, class: 'choice-information'
+      = link_to "I need support", contact_path, data: { choice: 'support' }, class: 'choice-support'
 
   .page-section
+    .what-is-logo
+      = image_tag 'logo-large@2x.png'
+
+    .what-is-content
+      %h2 What is Gender-based Violence (GBV)?
+      %p.heading-4
+        The United Nations defines Gender Based Violence as:
+        "Any act of gender-based violence that results in, or is likely to
+        result in, physical, sexual or psychological harm or suffering to women,
+        including threats of such acts, coercion or arbitrary deprivation of
+        liberty, whether occurring in public or in private life."
+
+      %p.heading-4
+        (UN 1993)
+
 
 %footer
