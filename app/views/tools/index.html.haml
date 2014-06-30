@@ -6,7 +6,7 @@
   .page-section
     - colors = %w{blue yellow orange red purple}
     - @categories.each_with_index do |category, i|
-      %h2{class: "segment-#{colors[i] if i < colors.length}"}= category.name
+      %h2.resource-category-heading{class: "segment-#{colors[i] if i < colors.length}"}= category.name
       .resource-category
         - category.tools.each do |tool|
           .resource
