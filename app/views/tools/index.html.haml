@@ -4,7 +4,7 @@
     %h1 Resources
   .resources-nav
     - @categories.each do |category|
-      = link_to category.name, "#" + category.anchor
+      = link_to category.name, "#" + category.anchor, style: "width: #{100 / @categories.count}%"
 
   .page-section
     - colors = %w{blue yellow orange red purple}
