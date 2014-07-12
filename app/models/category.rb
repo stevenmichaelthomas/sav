@@ -11,6 +11,8 @@
 class Category < ActiveRecord::Base
   has_many :tools
 
+  scope :with_resources, -> (n = 1) { where('tools_count >= ?', n) }
+
   def anchor
     name.split(' ')[0].downcase
   end
