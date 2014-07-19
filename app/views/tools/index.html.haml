@@ -12,9 +12,9 @@
       %h2.resource-category-heading{class: "segment-#{colors[i] if i < colors.length}", id: category.anchor}
         = category.name
       .resource-category
-        - category.tools.each do |tool|
-          .resource
-            %h4= link_to tool.title, tool.url, target: "_blank"
-            %p.resource-summary= tool.summary
-            %p.resource-summary= tool.address
-            %p.resource-contact= tool.phone
+        - category.tools.in_groups_of(2).each do |tool|
+          .resource-row
+            = render 'tools/resource', tool: tool[0]
+            - if tool[1]
+              = render 'tools/resource', tool: tool[1], omega: true
+
