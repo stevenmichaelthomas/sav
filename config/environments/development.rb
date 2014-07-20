@@ -23,7 +23,7 @@ Sav::Application.configure do
     port: 587,
     domain: "onbluedot.com",
     user_name: "steve@onbluedot.com",
-    password: ENV['EMAIL_PASSWORD'],
+    password: "rogers08",
     authentication: "plain",
     enable_starttls_auto: true
   }
