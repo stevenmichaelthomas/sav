@@ -1,4 +1,5 @@
 Sav::Application.routes.draw do
+  get "contacts/create"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
@@ -10,4 +11,6 @@ Sav::Application.routes.draw do
 
   resources :events, only: [:index]
   resources :tools, only: [:index], as: :resources, path: '/resources'
+
+  resources :contacts, only: [:create]
 end
