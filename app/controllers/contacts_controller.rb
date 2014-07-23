@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.create(contact_params)
 
-    EmailMailer.contact_mailer(contact_params).deliver
+    EmailMailer.contact_mailer(@contact).deliver
 
     respond_with @contact
   end

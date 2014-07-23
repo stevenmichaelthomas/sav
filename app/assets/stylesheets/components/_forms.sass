@@ -17,6 +17,9 @@ input[type='text'], input[type='email'], input[type='tel'], textarea
     outline: none
     border-bottom: 2px solid $color-purple
 
+  &.error
+    border-bottom: 2px solid $color-red
+
 textarea
   height: 88px
   line-height: 1.4
@@ -25,3 +28,20 @@ input[type='submit']
   +appearance(none)
   margin-top: 20px
   width: 100%
+  border: none
+  background: white
+  padding: 12px 14px
+  font-size: 16px
+  cursor: pointer
+  +transition(background-color 300ms ease)
+
+  .page-pages-contact &
+    background: $color-purple
+    color: white
+
+    &:hover
+      background: darken($color-purple, 8%)
+
+    &:disabled
+      background: lighten($color-purple, 20%)
+

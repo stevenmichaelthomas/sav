@@ -1,3 +1,5 @@
+= content_for :javascripts, javascript_include_tag('pages/contact')
+
 .container
   .page-hero.contact-hero
     = image_tag 'contact-stroke.png'
@@ -13,10 +15,20 @@
 
     .contact-form
       %h2 Interested in getting involved with SAV?
-      %form#contact
-        %input{type: 'text', placeholder: 'Name'}
-        %input{type: 'text', placeholder: 'Email'}
-        %textarea{placeholder: 'Message'}
+      = form_for @contact do |f|
+        = f.text_field :name, placeholder: 'Name'
+        = f.text_field :email, placeholder: 'Email'
+        = f.text_area :message, placeholder: 'Message'
+        = f.submit 'Send message', class: 'button', data: { disable_with: 'Sending...' }
+        .error-message
+          Please fix the highlighted fields and try submitting the form again.
+
+        .ajax-error-message
+          Sorry, something went wrong. Please try again later.
+
+        .success-message
+          Thank you for contacting us! <br/>
+          Someone will be in touch with you shortly.
 
   .page-section.section-other-contacts
     %h2 Other contacts
