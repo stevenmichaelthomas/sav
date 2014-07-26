@@ -4,23 +4,27 @@ footer
   background: #282828
   color: white
 
+  p
+    font-size: 14px
+    margin-bottom: $gutter
+
 .footer-content
   +span-columns(6, 12)
 
-  > p
-    font-size: 14px
-
   img
-    margin-top: $gutter
-    width: 335px
+    margin-bottom: $gutter
+    max-width: 80%
 
 .footer-links
   +span-columns(6, 12)
   +omega
   text-align: right
 
-  > a
+  a
+    float: right
+    padding: 8px 10px
     color: white
+    display: block
 
     &:visited
       color: white

@@ -1,6 +1,10 @@
 .container
   %footer
     .footer-content
+      = link_to image_tag('swc-logo.jpg'), 'http://www.swc-cfc.gc.ca/', target: '_blank'
+      = link_to image_tag('rrusa.png'), 'https://student.myrru.royalroads.ca/rrusa/student-association', target: '_blank'
+
+    .footer-links
       %p
         Funding for this project was received from Status of Women Canada, a
         federal government organization that promotes equality of women and
@@ -8,8 +12,9 @@
         Canada. For more information about their organization and work please
         visit their website.
 
-      = link_to image_tag('swc-logo.jpg'), 'http://www.swc-cfc.gc.ca/', target: '_blank'
+      = link_to "Contact", contact_path, class: "nav-5 #{'active' if current_page?(contact_path)}"
+      = link_to "Support", support_path, class: "nav-4 #{'active' if current_page?(support_path)}"
+      = link_to "Resources", resources_path, class: "nav-3 #{'active' if current_page?(resources_path)}"
+      = link_to "Events", events_path, class: "nav-2 #{'active' if current_page?(events_path)}"
 
-    .footer-links
-      = link_to "Contact us", contact_path
 
