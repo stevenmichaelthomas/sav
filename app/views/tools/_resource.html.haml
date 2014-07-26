@@ -1,6 +1,6 @@
 :ruby
   classes = []
-  classes << "omega"    if local_assigns[:omega]
+  classes << "omega"    if local_assigns[:omega] && local_assigns[:omega] == true
   classes << "featured" if local_assigns[:featured]
 
 .resource{class: classes.join(' ') }

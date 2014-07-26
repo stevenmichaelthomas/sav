@@ -12,16 +12,9 @@
       %h2.resource-category-heading{class: "segment-#{colors[i] if i < colors.length}", id: category.anchor}
         = category.name
       .resource-category
-        - category.tools.in_groups_of(2).each do |tool|
-          - if tool[0].featured
-            = render 'tools/resource', featured: true, tool: tool[0]
-            - next
-          - if tool[1] && tool[1].featured
-            = render 'tools/resource', featured: true, tool: tool[1]
-            - next
-
+        - category.tools.in_groups_of(2, false).each do |row|
           .resource-row
-            = render 'tools/resource', tool: tool[0]
-            - if tool[1]
-              = render 'tools/resource', tool: tool[1], omega: true
+            - row.each_with_index do |tool, i|
+              = render 'tools/resource', tool: tool, omega: (true if i % 2 != 0), featured: tool.featured
+
 
