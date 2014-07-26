@@ -136,6 +136,9 @@ $carousel-nav-item: #59C2C2
     &.flipped
       +transform(translateX(200px))
 
+  +at-breakpoint($break-mobile)
+    padding: $gutter 0
+
   &.active
     opacity: 1
     +transform(translateX(0))
