@@ -7,5 +7,6 @@ ActiveAdmin.register Tool do
     column "Category" do |tool|
       tool.category.name
     end
+    actions
   end
 end
