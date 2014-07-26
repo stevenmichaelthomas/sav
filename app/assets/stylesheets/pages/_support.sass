@@ -4,6 +4,10 @@
 .support-this-fall
   +span-columns(7, 12)
 
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+    margin-bottom: $gutter
+
   h2
     color: $color-red
 
@@ -14,6 +18,10 @@
   color: white
   +span-columns(5, 12)
   +omega
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+    margin-top: 0
 
   h2
     color: white

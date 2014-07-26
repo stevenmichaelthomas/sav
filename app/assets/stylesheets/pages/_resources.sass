@@ -19,6 +19,9 @@
   border: 1px solid #ccc
   border-radius: 3px
 
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+
   &.omega
     +omega
 
@@ -39,6 +42,9 @@
   background: $color-orange
   padding: $gutter / 2 0
 
+  +at-breakpoint($break-mobile)
+    white-space: normal
+
   > a
     @extend .heading-4
     color: white
@@ -46,3 +52,6 @@
     width: 19.7%
     text-align: center
     padding: $gutter / 2 0
+
+    +at-breakpoint($break-mobile)
+      width: 100% !important

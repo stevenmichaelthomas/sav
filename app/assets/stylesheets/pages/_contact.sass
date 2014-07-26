@@ -5,6 +5,10 @@
 .contact-rrusa
   +span-columns(6, 12)
 
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+    margin-bottom: $gutter
+
 .section-other-contacts
   background: $color-blue
   color: white
@@ -24,6 +28,9 @@
 .contact-form
   +span-columns(5, 12)
   +omega()
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
 
 .error-message, .ajax-error-message
   display: none

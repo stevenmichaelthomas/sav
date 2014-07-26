@@ -41,6 +41,15 @@ $carousel-nav-item: #59C2C2
   &:hover *
     text-decoration: none
 
+  +at-breakpoint($break-mobile)
+    padding: 30px
+
+    h2
+      width: auto
+      background: rgba(white, 0.6)
+      padding: $gutter
+      font-size: 24px
+
 .carousel-nav
   position: absolute
   bottom: 30px
@@ -62,9 +71,14 @@ $carousel-nav-item: #59C2C2
 
 .what-is-logo
   +span-columns(4, 12)
+  text-align: center
 
   > img
     width: 200px
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+    margin-bottom: $gutter
 
 .what-is-content
   +span-columns(8, 12)
@@ -72,6 +86,9 @@ $carousel-nav-item: #59C2C2
 
   > p
     margin-bottom: $gutter / 2
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
 
 .home-events
   background: $color-yellow
@@ -90,6 +107,9 @@ $carousel-nav-item: #59C2C2
 .carousel-1
   padding-top: 100px
   background: image-url('home-bg1.png') no-repeat center center
+
+  +at-breakpoint($break-mobile)
+    padding: $gutter
 
   > img
     margin-left: -260px

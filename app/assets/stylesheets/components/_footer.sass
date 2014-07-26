@@ -1,8 +1,15 @@
+.emergency-contact
+  background: #ccc
+  padding: $gutter $gutter * 1.5
+
 footer
   +clearfix
   padding: $gutter * 2 $gutter * 1.5
   background: #282828
   color: white
+
+  +at-breakpoint($break-mobile)
+    text-align: center
 
   p
     font-size: 14px
@@ -10,6 +17,9 @@ footer
 
 .footer-content
   +span-columns(6, 12)
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
 
   img
     margin-bottom: $gutter
@@ -19,6 +29,10 @@ footer
   +span-columns(6, 12)
   +omega
   text-align: right
+
+  +at-breakpoint($break-mobile)
+    +span-columns(12, 12)
+    text-align: center
 
   a
     float: right
