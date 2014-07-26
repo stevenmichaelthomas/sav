@@ -1,4 +1,9 @@
-.resource{class: ("omega" if local_assigns[:omega]) }
+:ruby
+  classes = []
+  classes << "omega"    if local_assigns[:omega]
+  classes << "featured" if local_assigns[:featured]
+
+.resource{class: classes.join(' ') }
   %h4= link_to tool.title, tool.url, target: "_blank"
   %p.resource-summary= tool.summary
   %p.resource-summary= tool.address

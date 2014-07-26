@@ -13,6 +13,10 @@
         = category.name
       .resource-category
         - category.tools.in_groups_of(2).each do |tool|
+          - if tool[0].featured
+            = render 'tools/resource', featured: true, tool: tool[0]
+          - if tool[1] && tool[1].featured
+            = render 'tools/resource', featured: true, tool: tool[1]
           .resource-row
             = render 'tools/resource', tool: tool[0]
             - if tool[1]
