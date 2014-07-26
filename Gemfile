@@ -9,6 +9,7 @@ gem 'compass-rails', github: "Compass/compass-rails"
 gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 gem 'pg'
 gem 'sass', '~> 3.3'
 gem 'sass-rails', '~> 4.0.0'
