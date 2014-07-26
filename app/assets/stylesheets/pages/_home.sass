@@ -121,3 +121,21 @@ $carousel-nav-item: #59C2C2
     > a
       color: $color-orange
 
+.gbv-stats
+  padding: 0 $gutter $gutter * 2
+
+.gbv-stat
+  text-align: center
+  padding: $gutter * 2 0
+  +transition(opacity 500ms ease, transform 500ms ease)
+
+  +at-breakpoint($break-desktop)
+    opacity: 0
+    +transform(translateX(-200px))
+
+    &.flipped
+      +transform(translateX(200px))
+
+  &.active
+    opacity: 1
+    +transform(translateX(0))

@@ -63,3 +63,8 @@
 
       %p.heading-4
         (UN 1993)
+
+  .gbv-stats
+    - 4.times do |i|
+      .gbv-stat{class: ("flipped" if i % 2 != 0)}= image_tag "stats/stat#{i + 1}.jpg"
+

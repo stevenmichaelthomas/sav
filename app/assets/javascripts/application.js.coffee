@@ -3,6 +3,7 @@
 
 #= require carousel
 #= require lib/jquery.autosize
+#= require lib/waypoints
 
 $body = $(document.body)
 
