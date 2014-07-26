@@ -31,9 +31,18 @@ $header-height: 80px
     > strong
       font-weight: $font-weight-semibold
 
-  nav
+    +at-breakpoint($break-mobile)
+      font-size: 16px
+
+  .main-nav
     line-height: $header-height
     float: right
+
+    +at-breakpoint($break-tablet)
+      display: none
+
+    +at-breakpoint($break-mobile)
+      display: none
 
     > a
       float: left
@@ -47,6 +56,48 @@ $header-height: 80px
 
       &:hover
         text-decoration: none
+
+  .mobile-nav-trigger
+    display: none
+    position: absolute
+    top: ($header-height - 17) / 2
+    right: 16px
+    width: 25px
+    height: 17px
+    background-image: inline-image('menu.svg')
+    background-size: 25px auto
+
+    .with-mobile-nav &
+      background-image: inline-image('menu-close.svg')
+      width: 20px
+      height: 20px
+      top: ($header-height - 20) / 2
+      background-size: 20px auto
+      right: 18px
+
+    +at-breakpoint($break-tablet)
+      display: block
+
+    +at-breakpoint($break-mobile)
+      display: block
+
+  .mobile-nav
+    display: none
+    position: absolute
+    top: $header-height
+    left: 0
+    width: 100%
+    background-color: white
+    z-index: 999
+    padding: 10px 0
+
+    a
+      display: block
+      padding: 10px 8px
+      font-size: 18px
+
+    .with-mobile-nav &
+      display: block
 
   @each $item, $key in $nav-map
     .#{$item}

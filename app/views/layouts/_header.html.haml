@@ -3,9 +3,19 @@
     #logo= link_to "", root_url
     %span Students <strong>Against</strong> Violence
 
-    %nav
+    %nav.main-nav
       = link_to "app", "https://itunes.apple.com/ca/app/oohlala-campus-app-events/id389713598", class: "nav-1", target: "_blank"
       = link_to "events", events_path, class: "nav-2 #{'active' if current_page?(events_path)}"
       = link_to "resources", resources_path, class: "nav-3 #{'active' if current_page?(resources_path)}"
       = link_to "support", support_path, class: "nav-4 #{'active' if current_page?(support_path)}"
       = link_to "contact", contact_path, class: "nav-5 #{'active' if current_page?(contact_path)}"
+
+    = link_to '', '#', class: 'mobile-nav-trigger', id: 'mobile-nav-trigger'
+
+    %nav.mobile-nav
+      .container
+        = link_to "events", events_path
+        = link_to "resources", resources_path
+        = link_to "support", support_path
+        = link_to "app", "https://itunes.apple.com/ca/app/oohlala-campus-app-events/id389713598", target: "_blank"
+        = link_to "contact", contact_path
