@@ -4,16 +4,23 @@
     %h1 Upcoming Events
 
   .page-section
-    .events
-      .event-headings
-        .event-column Date
-        .event-column Name
-        .event-column Location
-        .event-column Address
+    - if @events.present?
+      .events
+        .event-headings
+          .event-column Date
+          .event-column Name
+          .event-column Location
+          .event-column Address
 
-      - @events.each do |event|
-        .event
-          .event-column.event-date= event.date_str
-          .event-column.event-name= event.name
-          .event-column.event-location= event.location
-          .event-column.event-address= gmaps_link(event.address)
+
+        - @events.each do |event|
+          .event
+            .event-column.event-date= event.date_str
+            .event-column.event-name= event.name
+            .event-column.event-location= event.location
+            .event-column.event-address= gmaps_link(event.address)
+
+    - else
+      %p.events-empty
+        There aren't any scheduled events right now. <br/>
+        Check back regularly to learn about our upcoming events.
