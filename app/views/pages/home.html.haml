@@ -2,18 +2,18 @@
 
 .container
   .home-carousel
-    .carousel-item.page-hero.carousel-1.active
+    = link_to '#', class: 'carousel-item page-hero carousel-1 active' do
       = image_tag 'home-stroke1.png'
       %h2
         Building personal and community safety is a shared responsibility and
         students, staff and faculty help to contribute to making the Royal Roads
         campus feel safe
 
-    .carousel-item.page-hero.carousel-2
+    = link_to '#', class: 'carousel-item page-hero carousel-2' do
       %h2
         Our Mission
 
-    .carousel-item.page-hero.carousel-3
+    = link_to resources_path, class: 'carousel-item page-hero carousel-3' do
       %h2
         Check out our research
 

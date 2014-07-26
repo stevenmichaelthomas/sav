@@ -1,10 +1,10 @@
 footer
-  background: #282828
   +clearfix
   padding: $gutter * 2 $gutter * 1.5
+  background: #282828
+  color: white
 
 .footer-content
-  color: white
   +span-columns(6, 12)
 
   > p
@@ -13,3 +13,14 @@ footer
   img
     margin-top: $gutter
     width: 335px
+
+.footer-links
+  +span-columns(6, 12)
+  +omega
+  text-align: right
+
+  > a
+    color: white
+
+    &:visited
+      color: white
