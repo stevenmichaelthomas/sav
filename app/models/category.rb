@@ -9,6 +9,8 @@
 #
 
 class Category < ActiveRecord::Base
+  default_scope order('created_at DESC')
+
   has_many :tools
 
   scope :with_resources, -> (n = 1) { where('tools_count >= ?', n) }
