@@ -2,21 +2,24 @@
 
 .container
   .home-carousel
-    = link_to '#', class: 'carousel-item page-hero carousel-1 active' do
+    .carousel-item.page-hero.carousel-1.active
       = image_tag 'home-stroke1.png'
       %h2
-        Building personal and community safety is a shared responsibility and
-        students, staff and faculty help to contribute to making the Royal Roads
-        campus feel safe
+        = link_to '#' do
+          Building personal and community safety is a shared responsibility and
+          students, staff and faculty help to contribute to making the Royal Roads
+          campus feel safe
 
-    = link_to '#', class: 'carousel-item page-hero carousel-2' do
+    .carousel-item.page-hero.carousel-2
       %h2
-        Students Against Violence
-        Start the Conversation
+        = link_to '#' do
+          Students Against Violence
+          Start the Conversation
 
-    = link_to resources_path, class: 'carousel-item page-hero carousel-3' do
+    .carousel-item.page-hero.carousel-3
       %h2
-        Check out our research
+        = link_to resources_path do
+          Check out our research
 
     = link_to '', "#", class: "carousel-arrow-left"
     = link_to "", "#", class: "carousel-arrow-right"
