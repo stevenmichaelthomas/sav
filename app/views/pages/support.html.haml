@@ -38,8 +38,11 @@
   .page-section.section-application
     %h2 Application form
     = form_for :lol do |f|
-      = f.text_field :name, placeholder: 'Name'
-      = f.text_field :email, placeholder: 'Email'
-      = f.text_area :message, placeholder: 'Message'
-      = f.submit 'Send message', class: 'button', data: { disable_with: 'Sending...' }
+      = f.label :name
+      = f.text_field :name
+
+      = f.label :program
+      = f.text_field :program
+
+      = f.submit 'Send application', class: 'button', data: { disable_with: 'Sending...' }
 
