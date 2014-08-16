@@ -6,26 +6,40 @@
 
   .page-section.section-support
     .support-this-fall
-      %h2 Coming this fall
+      %h2 We are looking for Volunteers!
       %p.heading-4
-        Coming this fall, Students Against Violence and the Royal Roads Students
-        Association will be offering students a free peer support program
-        accessible through this website. Students requiring support in any
-        aspect of their lives will have the opportunity to virtual connect with
-        trained peer support team members.
+        Do you want to help build something new and exciting at Royal Roads?
+        Are you someone who likes to engage in conversations, learn new things
+        and support their fellow peers? Then may we suggest becoming a part of
+        the new Peer Support Team at Royal Roads!
 
-    .support-sponsor
-      %h2 Sponsor us!
       %p.heading-4
-        If you are interested in sponsoring the continued development and
-        evolution of the SAV Peer Support Project, please sponsor us. We
-        appreciate your support!
+        RRUSA and SAV are looking for highly motivated, on-campus, second year
+        students who are interested in joining us as Peer Support Volunteers for
+        a seven month pilot project.
 
-  .page-section.section-volunteer
-    %h2 Volunteer
-    %p.heading-4
-      Recruitment and training for the Peer Support Program will commence in
-      late August. If you are interested in receiving information details
-      regarding the program or are interested in becoming a peer support team
-      member, please #{link_to 'contact us', contact_path}.
-      Or, stay tuned to our website for more details.
+      %p.heading-4
+        Training will commence in the fall, but we are looking for applications
+        now. Check out our #{link_to 'position description', @description_url}
+        for more details and if you like what you see, send us your application.
+        We will be hosting an info night in September, but if you have any
+        questions in the meantime, feel free to pop us an email.
+
+      = link_to 'Apply now', "#", class: 'button'
+
+    .support-right
+      .support-sponsor
+        %h2 Sponsor us!
+        %p.heading-4
+          If you are interested in sponsoring the continued development and
+          evolution of the SAV Peer Support Project, please
+          #{link_to 'contact us', contact_path}. We appreciate your support!
+
+  .page-section.section-application
+    %h2 Application form
+    = form_for :lol do |f|
+      = f.text_field :name, placeholder: 'Name'
+      = f.text_field :email, placeholder: 'Email'
+      = f.text_area :message, placeholder: 'Message'
+      = f.submit 'Send message', class: 'button', data: { disable_with: 'Sending...' }
+

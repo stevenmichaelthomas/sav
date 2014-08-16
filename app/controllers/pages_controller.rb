@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def support
+    @description_url = "https://s3-us-west-2.amazonaws.com/sav-project/PSP-PositionDescription.pdf"
   end
 
   def contact

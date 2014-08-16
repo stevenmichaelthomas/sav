@@ -11,20 +11,48 @@
   h2
     color: $color-red
 
-.support-sponsor
-  padding: $gutter
-  margin-top: -$gutter
-  background: $color-red
-  color: white
+  > p
+    margin-bottom: $content-spacing
+
+    > a
+      color: $color-slate
+      font-weight: $font-weight-semibold
+
+  .button
+    background: $color-orange
+    margin-top: $gutter / 2
+    display: inline-block
+    width: auto
+    padding: $gutter / 2 $gutter
+    color: white
+    font-size: 24px
+
+    &:hover
+      background: darken($color-orange, 8%)
+
+    &:disabled
+      background: lighten($color-orange, 20%)
+
+.support-right
   +span-columns(5, 12)
   +omega
+
+.support-sponsor
+  padding: $gutter
+  margin-bottom: $gutter * 1.5
+  background: $color-red
+  color: white
+
 
   +at-breakpoint($break-mobile)
     +span-columns(12, 12)
     margin-top: 0
 
-  h2
+  h2, a
     color: white
+
+  a
+    font-weight: $font-weight-semibold
 
 .section-volunteer
   background: $color-yellow

@@ -8,7 +8,7 @@ input[type='text'], input[type='email'], input[type='tel'], textarea
   border-bottom: 2px solid #ccc
   background:    transparent
   border-radius: 0
-  color:         #333
+  color:         $color-slate
   font-size:     16px
   text-shadow:   none
   resize: none
@@ -24,7 +24,7 @@ textarea
   height: 88px
   line-height: 1.4
 
-input[type='submit']
+input[type='submit'], .button
   +appearance(none)
   margin-top: 20px
   width: 100%
@@ -45,4 +45,3 @@ input[type='submit']
 
     &:disabled
       background: lighten($color-purple, 20%)
-
