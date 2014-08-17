@@ -1,3 +1,5 @@
+= content_for :javascripts, javascript_include_tag('pages/support')
+
 .container
   .page-hero.support-hero
     = image_tag 'support-stroke.png'
@@ -40,6 +42,9 @@
     = form_for @support do |f|
       = f.label :name
       = f.text_field :name
+
+      = f.label :email
+      = f.text_field :email
 
       = f.label :program
       = f.text_field :program
@@ -84,4 +89,14 @@
         = f.check_box :honorarium
 
       = f.submit 'Send application', class: 'button', data: { disable_with: 'Sending...' }
+
+      .error-message
+        Please fix the highlighted fields and try submitting the form again.
+
+      .ajax-error-message
+        Sorry, something went wrong. Please try again later.
+
+      .success-message
+        Thank you for contacting us! <br/>
+        Someone will be in touch with you shortly.
 

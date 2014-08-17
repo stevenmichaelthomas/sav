@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(version: 20140817231757) do
 
   create_table "supports", force: true do |t|
     t.string   "name"
+    t.string   "email"
     t.string   "program"
     t.text     "why"
     t.text     "experience"

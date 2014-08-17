@@ -1,0 +1,18 @@
+<h3>
+  Someone just applied using the peer support on studentsagainstviolence.ca
+</h3>
+
+<ul>
+  <%
+    %w{
+      name email program why experience gain strengths understanding challenges
+      training responsibilities honorarium
+    }.each do |field| %>
+      <% if @support.send(field).present? %>
+        <li>
+          <%= field.titleize %>: <br/>
+          <%= @support.send(field) %>
+        </li>
+      <% end %>
+  <% end %>
+</ul>

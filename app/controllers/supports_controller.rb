@@ -1,4 +1,6 @@
-class SupportsControler < ApplicationController
+class SupportsController < ApplicationController
+  respond_to :json, only: [:create]
+
   def create
     @support = Support.create(support_params)
 
@@ -9,7 +11,7 @@ class SupportsControler < ApplicationController
 
   def support_params
     params.require(:support)
-          .permit(:name, :program, :why, :experience, :gain, :strengths,
+          .permit(:name, :email, :program, :why, :experience, :gain, :strengths,
                   :understanding, :challenges, :training, :responsibilities,
                   :honorarium)
   end

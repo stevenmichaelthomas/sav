@@ -80,3 +80,22 @@
   input[type='text'], textarea
     margin-bottom: $gutter
     height: 44px
+
+#new_support
+  position: relative
+
+  &.with-errors
+    .error-message
+      display: block
+
+  &.with-ajax-error
+    .ajax-error-message
+      display: block
+
+  &.success
+    height: 250px
+    overflow: hidden
+
+    .success-message
+      opacity: 1
+      z-index: 1
