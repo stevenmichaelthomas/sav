@@ -50,36 +50,38 @@
       = f.label :experience, "Do you have volunteer experience? If so, where did you volunteer and what were your duties?"
       = f.text_area :experience
 
+      = f.label :gain, "What do you hope to gain from volunteering as a Peer Support Volunteer?"
+      = f.text_area :gain
 
-      Why do you want to be a Peer Support Volunteer?
+      = f.label :strengths, "What do you consider your strengths, and how would you bring them to the role of a Peer Support Volunteer?"
+      = f.text_area :strengths
 
-Do you have volunteer experience? If so, where did you volunteer and what were your duties?
+      = f.label :understanding, "What is your understanding about the way Gender Based Violence is affecting men and women differently?"
+      = f.text_area :understanding
 
-What do you hope to gain from volunteering as a Peer Support Volunteer?
+      = f.label :challenges, "What do you believe are challenges a Peer Support Volunteer might encounter?"
+      = f.text_area :challenges
 
-What do you consider your strengths, and how would you bring them to the role of a Peer Support
+      = f.label :confirm, "Please confirm these statements by checking the boxes next to them:"
 
-Volunteer?
+      .check_box-wrapper
+        = f.label :training, "I am available to attend the training weekend October 17, 18 and 19th"
+        = f.check_box :training
 
-What is your understanding about the way Gender Based Violence is affecting men and women
+      .check_box-wrapper
+        = f.label :responsibilities do
+          I have read the position description and understand that I am responsible for:
 
-differently?
+          %ul
+            %li Attending monthly debrief sessions
+            %li Completing a group outreach project
+            %li Completing a Group Legacy Project.
 
-What do you believe are challenges a Peer Support Volunteer might encounter?
+        = f.check_box :responsibilities
 
-Please confirm these statements by checking the boxes next to them:
-
-I am available to attend the training weekend October 17, 18 and 19th
-
-I have read the position description and understand that I am responsible for:
-
--Attending monthly debrief sessions
-
--Completing a group outreach project
-
--Completing a Group Legacy Project.
-
-I understand that this is a volunteer position with a bi-weekly honourarium for on call hours
+      .check_box-wrapper
+        = f.label :honorarium, "I understand that this is a volunteer position with a bi-weekly honourarium for on call hours"
+        = f.check_box :honorarium
 
       = f.submit 'Send application', class: 'button', data: { disable_with: 'Sending...' }
 
