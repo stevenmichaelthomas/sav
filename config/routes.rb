@@ -13,4 +13,5 @@ Sav::Application.routes.draw do
   resources :tools, only: [:index], as: :resources, path: '/resources'
 
   resources :contacts, only: [:create]
+  resources :supports, only: [:create]
 end
