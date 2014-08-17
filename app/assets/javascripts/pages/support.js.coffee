@@ -44,4 +44,10 @@ class SupportForm
     if @$el.find('.error').length then false else true
 
 $ ->
+  $body = $(document.body)
+
   new SupportForm(document.getElementById('new_support'))
+
+  $('.button-apply').on 'click', (e) ->
+    e.preventDefault()
+    $body.addClass('with-application-form')

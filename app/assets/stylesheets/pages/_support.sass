@@ -38,16 +38,14 @@
   +span-columns(5, 12)
   +omega
 
+  +at-breakpoint($break-mobile)
+    display: none
+
 .support-sponsor
   padding: $gutter
   margin-bottom: $gutter * 1.5
   background: $color-red
   color: white
-
-
-  +at-breakpoint($break-mobile)
-    +span-columns(12, 12)
-    margin-top: 0
 
   h2, a
     color: white
@@ -63,8 +61,16 @@
     font-weight: $font-weight-semibold
     color: white
 
+.button-apply
+  .with-application-form &
+    display: none
+
 .section-application
   padding-top: 0
+  display: none
+
+  .with-application-form &
+    display: block
 
   ul
     list-style-type: disc
