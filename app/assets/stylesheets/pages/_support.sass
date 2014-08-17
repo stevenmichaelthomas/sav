@@ -1,3 +1,19 @@
+.page-pages-support
+  .button
+    background: $color-orange
+    margin-top: $gutter / 2
+    display: inline-block
+    width: auto
+    padding: $gutter / 2 $gutter
+    color: white
+    font-size: 24px
+
+    &:hover
+      background: darken($color-orange, 8%)
+
+    &:disabled
+      background: lighten($color-orange, 20%)
+
 .section-support
   padding-top: $gutter * 3
 
@@ -17,21 +33,6 @@
     > a
       color: $color-slate
       font-weight: $font-weight-semibold
-
-  .button
-    background: $color-orange
-    margin-top: $gutter / 2
-    display: inline-block
-    width: auto
-    padding: $gutter / 2 $gutter
-    color: white
-    font-size: 24px
-
-    &:hover
-      background: darken($color-orange, 8%)
-
-    &:disabled
-      background: lighten($color-orange, 20%)
 
 .support-right
   +span-columns(5, 12)
@@ -83,6 +84,9 @@
 
 #new_support
   position: relative
+
+  input[type='submit']
+    font-size: 20px
 
   &.with-errors
     .error-message
