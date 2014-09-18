@@ -7,7 +7,7 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Recent Applications" do
           ul do
-            Support.first(5).map do |support|
+            Support.last(5).reverse.map do |support|
               li link_to(support.name, admin_supports_path(support))
             end
           end

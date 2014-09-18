@@ -11,7 +11,15 @@
       <% if @support.send(field).present? %>
         <li>
           <%= field.titleize %>: <br/>
-          <%= @support.send(field) %>
+          <% if field == "training" || field == "responsibilities" || field == "honorarium" %>
+            <% if @support.send(field) == true %>
+              Checked
+            <% else %>
+              Not checked
+            <% end %>
+          <% else %>
+            <%= @support.send(field) %>
+          <% end %>
         </li>
       <% end %>
   <% end %>
