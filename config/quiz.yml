@@ -1,0 +1,317 @@
+-
+  question:
+    content: >
+      When someone says a person was "playing hard to get," they usually mean that
+      the person was pretending not to be interested in someone romantically (or
+      sexually) when they really were. It's totally fine say this in public in
+      Canada.
+    options:
+      - Yup!
+      - It's socially acceptable, but it shouldn't be.
+      - Women think it is, but men generally don't.
+      - No way!
+  answer:
+    key: 1
+    content: >
+      This is generally something that men say about women, and tends to be more
+      socially accepted among men than women, though this is slowly changing.
+      Girls (in particular) will be described as “playing hard to get,” when
+      really they are not interested. This idea that people pretend not to like
+      someone in order to encourage sexual advances from the other person is
+      very prevalent in rape culture. If someone says they are not interested,
+      respond respectfully, and walk away. If, in the very off chance that they
+      were pretending not to be interested, they can approach you afterwards.
+    link_html: >
+      To learn more, take a look at this article:
+      <a href='http://disruptingdinnerparties.com/2013/05/21/feminist-dating-level-hard/'>http://disruptingdinnerparties.com/2013/05/21/feminist-dating-level-hard/</a>
+-
+  question:
+    content: >
+      By making this sign with his hand, is this man sending a romantic or sexual message?
+    options:
+      - Heck yes!
+      - Not with his hand gesture... but maybe his facial expression.
+      - No way - this is totally insulting!
+  answer:
+    key: 1
+    content: >
+      In Canada, his action may be interpreted as him flirting because of his
+      facial expression, but the gesture itself is not flirty. Important: in
+      some countries this is a VERY rude gesture (equivalent to the Canadian
+        gesture of raising your middle finger with the back of your hand facing
+        a person, which means “f*ck you”); however, in Canada, this gesture is
+        seen to be the same as a peace sign, or simply meaning the number 2.
+    link_html: >
+      To learn more about different cultural meanings of hand gestures, check
+      out: <a href='http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html'>http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html</a>
+
+-
+  question:
+    content: >
+      On dates, it's pretty common for Canadian couples to "go Dutch." What the
+      heck does that mean?
+    options:
+      - Each person pays half of the bill.
+      - The person who earns more money pays the bill.
+      - The person who made the invitation pays the bill.
+      - The woman pays the bill.
+      - The couple runs away without paying the bill.
+
+  answer:
+    key: 0
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      True or false: It's totally ok to call someone a slut if they are known to
+      date lots of people.
+    options:
+      - True - it's common slang.
+      - False - it's totally insulting.
+      - Depends if you know them or not.
+
+  answer:
+    key: 1
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If your Canadian friend says: "My date stood me up!" What do they mean?
+    options:
+      - Their date pulled out their chair for them to sit down on. How chivalrous!
+      - Their date did not show up. Meanie pants!
+      - At the end of the date, they stood awkwardly at the door while one of them tried to kiss the other, but the other kept pushing them away.
+
+  answer:
+    key: 1
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If someone asks if you want to hook up, what are they asking you to do?
+    options:
+      - Call them on the phone to make a date or get to know each other better.
+      - Go out on a date with them.
+      - Meet up to have sex.
+
+  answer:
+    key: 2
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      According to Adam Lyons, the self-labeled “dating coach,” you can be pretty
+      sure a girl you don't know wants you to approach her and talk to her if she:
+
+      <ul>
+        <li>If she’s staring at you multiple times.</li>
+        <li>If she’s physically touching you.</li>
+        <li>If she asks you for help with absolutely anything.</li>
+      </ul>
+
+      You can watch the video here: https://www.youtube.com/watch?v=rYMjGdLiEiI.
+
+      Is this good advice?
+
+    options:
+      - Do everything this guy says. He's a genius!
+      - It's pretty good advice, but it might not always be true.
+      - No, no, no! That is terrible advice!
+
+  answer:
+    key:
+    content: >
+    link_html: >
+
+# SEXUALITY
+
+-
+  question:
+    content: >
+      True or false: In Canada, if you are LGBTQ+ (lesbian, gay, bisexual, trans* [including transsexual, transgender, non-gender etc], queer, etc), you better hide it from your boss, or it's pretty likely you'll be fired on the spot.
+
+    options:
+      - "Embarrassing, but yes. There aren't many laws in place to protect LGBTQ+ people in Canada."
+      - "Not a chance - and if they do fire you, you can sue them."
+
+  answer:
+    key: 1
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Homosexuality is totally natural – many species of animals (including humans, of course) seek out same-sex partners in nature – and love can lead to marriage. This begs the question: can same-sex couples get married in Canada?
+    options:
+      - You betcha! As it should be.
+      - Only in some provinces at this point.
+      - Sadly, not yet.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If you keep your comments about someone’s sexuality limited to commenting on their online profile, you can’t get in trouble, even if you are threatening that person’s safety.
+    options:
+      - Uh huh. That’s right.
+      - ...You’re kidding, right? Of course you can still get in trouble!
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Calling someone a pansy...
+    options:
+      - Is a lovely compliment. Pansies are beautiful!
+      - Is a rude way of telling a woman that you think she is nice looking.
+      - Is intended to be an insult.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If you don't know what slang to use to show that something that is bad,
+      just pick a rude slang word that describes homosexual men, and people will know what you mean.
+    options:
+      - What the hell? NO. Not true!!
+      - Awful, but true.
+      - Excellent advice.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      True or False: If a man wears pink, it means that he is gay.
+    options:
+      - Yes, it’s a pretty clear sign.
+      - No. If a man is wearing pink, it means he wants to wear pink. It’s not a statement about who he’s attracted to!
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If someone says they’re bisexual, does that mean they’re more likely to cheat on you?
+    options:
+      - Of course not. Just because someone likes people of whatever gender, it doesn’t mean they like ALL those people. And besides, being attracted to someone is not the same as being deceitful to your partner. To cheat on your partner is abusing their trust.
+      - Yes! If someone is bisexual, that means they are attracted to guys AND girls, so they’re super sexual people.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Ok... but in English, talking about someone’s sex and their gender is the same thing. Right?
+    options:
+      - Yup. Those words are interchangeable, especially in biology class.
+      - They are similar, but not the same. Someone’s sex is their X and Y chromosomes, while gender is if they are male or female.
+      - Nope. They’re thought to be the same (or at least close enough), but that totally ignores all the other kinds of gender that exist other than male and female.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Ok... so what the heck are gender identity and gender roles then?
+    options:
+      - Gender identity is a person’s deep psychological feeling of connection or affinity with a certain gender. Their gender role is how they show their gender to the outside world.
+      - A person’s gender identity the label given to them by the doctor or midwife when they are born. Their gender role is how they act in public as they grow up.
+      - Gender identity is the label that is on a person’s government issued identification cards. Their gender role is the role they play in public.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      If someone says they are two-spirit, third gender, or third sex, they are saying...
+    options:
+      - They are male.
+      - They are female.
+      - They are both male and female.
+      - They are neither male nor female (they don’t fit into these narrow categories).
+      - They don’t understand the gender binary (they don't understand the definitions of male and female).
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Some people believe gender is fluid, meaning a person's gender can change between male and female depending on the situation and how the individual feels.
+    options:
+      - Ya, I’ve heard of that.
+      - ??? I really don’t know!
+      - No... you made that up.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      What should you do if you see a person you believe is transgender (a person who was born a man, but lives as a woman) going into the women's bathroom at school?
+    options:
+      - Nothing! People can choose which bathroom to use.
+      - "Tell the front desk, or call security. That's against the rules!"
+      - Confront them and tell them they are in the wrong bathroom.
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      Pronouns can be tricky. What do you call a person who is currently in transition from identifying with one gender to identifying with another (ex. An individual who was born with female biological attributes, but is transitioning to identifying as a man).
+    options:
+      - She was born a girl, so you call her “she.”
+      - He is living as a man, so you call him “him.”
+      - He/she is confused, and so am I! Call the person “him/her.”
+      - Is this going back to that third gender question? Should I call the person “it?”
+  answer:
+    key:
+    content: >
+    link_html: >
+
+-
+  question:
+    content: >
+      True or false: traditional definitions of what it means to be a man are a barrier for ambitious women in the workplace.
+    options:
+      - What? That’s crazy talk. It’s just because women take time off more than men that they lag behind in wage and level of seniority.
+      - True story! If the man is “supposed” to be the bread-winner/leader/boss, where does that leave the woman? In subordinate positions, that’s where!
+  answer:
+    key:
+    content: >
+    link_html: >
