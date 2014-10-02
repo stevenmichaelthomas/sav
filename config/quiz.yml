@@ -12,7 +12,7 @@
       - No way!
   answer:
     key: 1
-    content: >
+    content: |
       This is generally something that men say about women, and tends to be more
       socially accepted among men than women, though this is slowly changing.
       Girls (in particular) will be described as “playing hard to get,” when
@@ -21,7 +21,7 @@
       very prevalent in rape culture. If someone says they are not interested,
       respond respectfully, and walk away. If, in the very off chance that they
       were pretending not to be interested, they can approach you afterwards.
-    link_html: >
+
       To learn more, take a look at this article:
       <a href='http://disruptingdinnerparties.com/2013/05/21/feminist-dating-level-hard/'>http://disruptingdinnerparties.com/2013/05/21/feminist-dating-level-hard/</a>
 -
@@ -34,16 +34,15 @@
       - No way - this is totally insulting!
   answer:
     key: 1
-    content: >
+    content: |
       In Canada, his action may be interpreted as him flirting because of his
       facial expression, but the gesture itself is not flirty. Important: in
       some countries this is a VERY rude gesture (equivalent to the Canadian
-        gesture of raising your middle finger with the back of your hand facing
-        a person, which means “f*ck you”); however, in Canada, this gesture is
-        seen to be the same as a peace sign, or simply meaning the number 2.
-    link_html: >
-      To learn more about different cultural meanings of hand gestures, check
-      out: <a href='http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html'>http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html</a>
+      gesture of raising your middle finger with the back of your hand facing
+      a person, which means “f*ck you”); however, in Canada, this gesture is
+      seen to be the same as a peace sign, or simply meaning the number 2.
+
+      To learn more about different cultural meanings of hand gestures, check out: <a href='http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html'>http://westsidetoastmasters.com/resources/book_of_body_language/chap5.html</a>
 
 -
   question:
@@ -59,8 +58,10 @@
 
   answer:
     key: 0
-    content: >
-    link_html: >
+    content: |
+      It's pretty common for Canadian couples to split the bill evenly when out on a date. Similarly, when out with friends, each person usually pays for their own meal, or, if all the meals were a similar price, the group may "go Dutch," and split the bill evenly. In other countries, this practice is called: to pay the way Catalans do (Spain) to pay like they do in Rome (Italy) to pay the bill the German way (Turkey) His, His; Whose, Whose (Bangladesh) American share (Thailand) American style (Columbia). Regardless of who pays, there is no obligation or expectation to have sex, or even kiss your date. It is always your choice what happens to your body.
+
+      To learn more about where this idiom came from, check out: http://www.worldwidewords.org/qa/qa-goi3.htm
 
 -
   question:
@@ -74,8 +75,10 @@
 
   answer:
     key: 1
-    content: >
-    link_html: >
+    content: |
+      Absolutely false. It is totally insulting call someone a slut, and implies a negative judgement about that person's character. You may, nevertheless, hear people say it, and even claim that it's a joke, or no big deal. However, this word can really hurt people. It's a slanderous word that is more often directed at women, while men are more likely to be called a "player" - a word that doesn't have quite the same negative connotations and reputation damaging potential as "slut" does. It's really an awful thing to say. Plus, who are you to judge what is right for another person?
+
+      To learn more about the dangers of this kind of sexualized harassment, take a look at: http://antiviolenceproject.org/info/sexualized-harassment/
 
 -
   question:
@@ -88,8 +91,10 @@
 
   answer:
     key: 1
-    content: >
-    link_html: >
+    content: |
+      When someone says they've been "stood up," it means the person they were supposed to go out with didn't show up for their date, and didn't contact them to say they wouldn't be there. It's rude and unkind. In other countries, there are different expressions associated with this practice, including "placing a rabbit" (France), "giving pit" (Italy), "dynamite" (Russia), "bouncing" (China), and simply "betraying" (Iceland). For the record, the answer for C is sexual harassment. Don't do that!
+
+      For some tips on how to deal with being stood up, check out: http://thestir.cafemom.com/love_sex/146030/8_ways_to_handle_being
 
 -
   question:
@@ -102,8 +107,8 @@
 
   answer:
     key: 2
-    content: >
-    link_html: >
+    content: |
+      The term "hooking up" has a definite implication of a sexual encounter, often between people who are not in a serious relationship. If someone asks you to hook up, it is an invitation, and you don't have to say yes if you don't want to, even if it sounds sort of like a command (ex. "come over to my place tonight so we can hook up"). It is an ambiguous phrase, and can also mean making out (kissing), as explained at: http://www.huffingtonpost.com/2011/10/12/hooking-up_n_1007364.html. Because of this, if you’re unsure what exactly is on the table, but you’re interested in finding out, then clarify with the person what they mean.
 
 -
   question:
@@ -127,9 +132,11 @@
       - No, no, no! That is terrible advice!
 
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      This is not terrible advice - it's very good to remember a couple of things that the speaker glossed over, though: 1. If a girl isn't looking at you, touching you, or talking to you, it's probably not a good idea to interrupt her. 2. He is giving tips for when to TALK to a girl. This does not mean you should feel entitled to touch her in any way, and if she doesn't seem like she wants to talk to you after all, then you need to leave her alone, otherwise, it is harassment.
+
+      If you’re looking for more tips, there’s some pretty awesome advice at: http://jezebel.com/5981581/how-to-talk-to-a-woman-without-being-a-creep. For advice on how to approach a girl, once you’re pretty sure she wants to talk to you, check out: http://health.howstuffworks.com/relationships/dating/how-to-approach-a-girl2.htm.
 
 # SEXUALITY
 
@@ -144,9 +151,10 @@
 
   answer:
     key: 1
-    content: >
-    link_html: >
+    content: |
+      It's your business what your sexuality is, and no one else's, but if you want to share that information, then all power to you. Bosses are NOT allowed to discriminate on the basis of the sexual orientation of their employees.
 
+      Want more information? Check out this website from the Government of Canada: http://www.parl.gc.ca/content/lop/researchpublications/921-e.htm
 -
   question:
     content: >
@@ -156,10 +164,11 @@
       - Only in some provinces at this point.
       - Sadly, not yet.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 0
+    content: |
+      This win for human rights took root in the early 1990s, and was upheld by the Supreme Court of Canada in 1999.
 
+      Read more about this at: http://www.parl.gc.ca/content/lop/researchpublications/921-e.htm
 -
   question:
     content: >
@@ -168,9 +177,25 @@
       - Uh huh. That’s right.
       - ...You’re kidding, right? Of course you can still get in trouble!
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      Whether you harass someone in person or online, it’s still harassment, it goes against school policies (posted below). If you are threatening someone’s safety, it is against the law, and you can be charged with criminal harassment or uttering threats.
+      Student Rights and Responsibilities Policy at Royal Roads University
+
+      3.0 Students have the right to a University community characterized by mutual respect and equal opportunity.
+      4.0 Students have the responsibility to treat all members of the University community with respect, in learning environments and in all other interactions. Students have the responsibility not to engage in behaviour that a reasonable person should reasonably know is unsafe or inappropriate and not to intimidate, interfere with, threaten or otherwise obstruct any University activity, nor to hinder members of the University community in the pursuit of their legitimate activities.
+
+      https://student.myrru.royalroads.ca/policies/student-rights-and-responsibilities-policy
+
+      Criminal code 264
+      1. Criminal harassment - No person shall, without lawful authority and knowing that another person is harassed or recklessly as to whether the other person is harassed, engage in conduct referred to in subsection (2) that causes that other person reasonably, in all the circumstances, to fear for their safety or the safety of anyone known to them.
+      2. The conduct mentioned in subsection (1) consists of:
+        * Repeatedly following from place to place the other person or anyone known to them;
+        * Repeatedly communicating with, either directly or indirectly, the other person or anyone known to them;
+        * Besetting or watching the dwelling-house, or place where the other person, or anyone known to them, resides, works, carries on business or happens to be; or
+        * Engaging in threatening conduct directed at the other person or any member of their family.
+
+      http://www.rcmp-grc.gc.ca/qc/pub/cybercrime/cybercrime-eng.htm#traditional
 
 -
   question:
@@ -181,9 +206,9 @@
       - Is a rude way of telling a woman that you think she is nice looking.
       - Is intended to be an insult.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 2
+    content: |
+      Calling someone a pansy is meant to be an insult, generally directed at men. Like many insults often directed at men, calling someone a pansy implies that they are feminine, and therefore less of a man. It can also imply that the man is homosexual. Not only is it totally inappropriate to harass another person in this way, using things associated with women as insults can be very damaging to girls’ self-esteem, and there are many initiatives, such as the #likeagirl campaign, that are working to change this negative North American habit.
 
 -
   question:
@@ -195,9 +220,11 @@
       - Awful, but true.
       - Excellent advice.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      I wish I could say that the answer is A - and that answer is at least half right. This practice is totally NOT OK. In fact, there is a huge movement in all public schools in BC that is called "That's so gay is not ok" which is trying to change this norm. PLEASE NEVER DO THIS, and if you hear someone else doing it, call them on it. It's a disgusting and pervasive form of discrimination.
+
+      To learn more about the “That’s so gay is not ok” movement, check out Victoria School District’s info sheet: https://documents.sd61.bc.ca/edsrvs/Discrimination_Committee/Backgrounder.pdf
 
 -
   question:
@@ -207,9 +234,13 @@
       - Yes, it’s a pretty clear sign.
       - No. If a man is wearing pink, it means he wants to wear pink. It’s not a statement about who he’s attracted to!
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      In North America, and much of the west, pink is a colour that is often associated with girls. Therefore, some people may assume that if a boy wants to wear that colour, then he is gay. In fact, pink used to be a colour that was associated with boys, not girls, and it’s only relatively recently that large department stores changed that norm. The only way to know if a man is gay is if he tells you he is. Even if you see him engage in public displays of affection with another man, you don’t know the whole story. He may come from another culture where, for example, holding hands with another man is the norm, or kissing hello is common practice. Or perhaps he is bisexual (attracted to both males and females), or transsexual (attracted to people of all genders). You just can’t “tell” who another person is attracted to by the clothes they wear.
+
+      You can learn more about one woman’s effort to get rid of the bias towards boys wearing pink through this video:
+      http://www.upworthy.com/a-mom-got-tired-of-people-telling-her-that-her-son-couldnt-wear-pink-so-heres-what-she-did?c=ufb1
+      Listen carefully.. she speaks quickly!
 
 -
   question:
@@ -219,9 +250,11 @@
       - Of course not. Just because someone likes people of whatever gender, it doesn’t mean they like ALL those people. And besides, being attracted to someone is not the same as being deceitful to your partner. To cheat on your partner is abusing their trust.
       - Yes! If someone is bisexual, that means they are attracted to guys AND girls, so they’re super sexual people.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 0
+    content: |
+      Bisexuality just means that an individual is attracted to people of more than one gender. This doesn’t exclude those people from identifying as gay or heterosexual, and in fact, people who identify as bisexual are sometimes excluded from both of those communities of support, due to stigmas and misinformation. People who identify as bisexual are no more sexual, as a group, than any other group who identifies with a certain sexuality. A person is a person, and you have to decide for yourself if an individual is trustworthy or not. Don’t decide based on their sexuality, but on their personal character.
+
+      To learn more about bisexuality, you can check out: http://www.biresource.net/index.shtml. Look under the “resources” and “youth” links for more information. You can also watch this awesome video: http://youtu.be/K1xnnY7oKtI - it doesn’t get more straightforward than that!
 
 -
   question:
@@ -232,9 +265,11 @@
       - They are similar, but not the same. Someone’s sex is their X and Y chromosomes, while gender is if they are male or female.
       - Nope. They’re thought to be the same (or at least close enough), but that totally ignores all the other kinds of gender that exist other than male and female.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 2
+    content: |
+      Sex is indeed the chromosomal makeup of a person – do they have XX chromosomes, or XY chromosomes, or XXY chromosomes (a less common, but still present occurrence). Gender is actually a spectrum, so diminishing it to two genders (male and female) ignores the reality of an entire part of the population.
+
+      Refer to https://www.genderspectrum.org/understanding-gender or http://www.manyvoices.org/blog/resource/what-does-gender-diversity-mean/ for more information.
 
 -
   question:
@@ -245,9 +280,9 @@
       - A person’s gender identity the label given to them by the doctor or midwife when they are born. Their gender role is how they act in public as they grow up.
       - Gender identity is the label that is on a person’s government issued identification cards. Their gender role is the role they play in public.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 0
+    content: |
+      According to the Medscape, an online medical journal and web resource for medical professionals, gender identity is personally identified, and it may or may not be the same as the sex that is assigned to a person at birth, and listed on government identification cards. A person’s gender role is an outward expression of gender through clothing, mannerisms and behaviour. It is usually the same gender as the one they identify with, but not always. Culture also plays a role in these two definitions. You can read more here: http://emedicine.medscape.com/article/917990-overview. This page also has further information on the difference between sex and gender.
 
 -
   question:
@@ -260,9 +295,11 @@
       - They are neither male nor female (they don’t fit into these narrow categories).
       - They don’t understand the gender binary (they don't understand the definitions of male and female).
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 3
+    content: |
+      Gender is often defined as the choice between male and female; however, some people feel that those two categories are too restrictive, and there are people who do not fit the definitions of male or female. These people might identify as two-spirit, third gender, or third sex.
+
+      To learn more, take a look at this breakdown of different words associated with gender: https://www.genderspectrum.org/images/stories/08%20a%20word%20about%20words.gender.pdf
 
 -
   question:
@@ -273,9 +310,11 @@
       - ??? I really don’t know!
       - No... you made that up.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 0
+    content: |
+      If someone says their gender changes depending on the situation, including with their mood, they might say they are trigender, or gender fluid.
+
+      If you haven’t heard of this, then you clearly didn’t read the pdf from the last answer! Check it out now: https://www.genderspectrum.org/images/stories/08%20a%20word%20about%20words.gender.pdf
 
 -
   question:
@@ -286,9 +325,15 @@
       - "Tell the front desk, or call security. That's against the rules!"
       - Confront them and tell them they are in the wrong bathroom.
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 0
+    content: |
+      We’re back to a question about human rights, and the answer to this question is, without a doubt, A. A transgender person living as a woman identifies with that gender, so it is completely appropriate for her to use the women's bathroom. It’s important to note that transgender men and women can feel that THEY are the people whose safety is at risk in this situation.
+
+      Read more about what it feels like from the point of view of a transgender person picking which bathroom to use: http://iamtransgendered.com/RestRooms.aspx
+
+      Please note: if you feel that your safety is at risk, go to a safe place, and then call security. However, you should not assume a transgender person is dangerous merely because s/he may look different from you, and confronting that person about their choice of bathroom is completely inappropriate and offensive.
+
+      Here is some more information from a legal standpoint. While it was written in the United States, it’s good advice for Canada, too: http://www.lambdalegal.org/know-your-rights/transgender/restroom-faq. Here is an article about how transgender rights are becoming law in Canada: http://ottawacitizen.com/news/national/alex-neve-and-amanda-ryan-human-rights-victory-for-transgender-canadians, and this is a transcript of the speeches by members of parliament about the bill: https://openparliament.ca/bills/41-1/C-279/?singlepage=1.
 
 -
   question:
@@ -300,9 +345,9 @@
       - He/she is confused, and so am I! Call the person “him/her.”
       - Is this going back to that third gender question? Should I call the person “it?”
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      It’s not always the case, but usually, the best practice is to call the person by the pronoun associated with the gender they are transitioning towards. Take a cue from the person’s introduction. If they introduce themselves with a traditionally male name, then use the male pronoun to refer to them. Likewise if they use a traditionally female name. If you’re not sure, you really need to know (ex. You’ll be interacting with this person on a team, so you’ll be referring to them often), and you feel comfortable doing so, you can ask in a respectful way. Get some tips on how to ask, as well as some gender-neutral pronouns that you can use at: https://apps.carleton.edu/student/orgs/saga/pronouns/
 
 -
   question:
@@ -312,6 +357,8 @@
       - What? That’s crazy talk. It’s just because women take time off more than men that they lag behind in wage and level of seniority.
       - True story! If the man is “supposed” to be the bread-winner/leader/boss, where does that leave the woman? In subordinate positions, that’s where!
   answer:
-    key:
-    content: >
-    link_html: >
+    key: 1
+    content: |
+      Traditional expectations of men’s behaviours and values have shaped corporate culture, meaning that women’s strengths are sometimes overlooked. In fact, some studies show that women with children are seen to be the least desirable candidates by human resources professionals (due to a presumed lack of commitment to the company), while men with children are the most desirable candidates (due to presumed attributes of responsibility and reliability). Men and women with no kids rank somewhere in the middle; however, women, regardless of their family composition, had lower wages than their male colleagues.
+
+      Read the articles in the academic references section, or check out this site for a less academic break down of the facts: http://www.businessweek.com/articles/2014-01-30/gender-inequality-in-the-workplace-what-data-analytics-says#p2. Here’s a more hopeful and inspiring article outlining the attributes of companies that have been more highly rated in terms of diversity at senior management and board levels: http://www.mckinsey.com/insights/organization/lessons_from_the_leading_edge_of_gender_diversity.
