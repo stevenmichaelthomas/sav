@@ -70,7 +70,11 @@
       %p.heading-4
         (UN 1993)
 
-  .gbv-stats
+  .page-section.rights-video
+    %h2 Do you know your rights?
+    %iframe(width="560" height="315" src="//www.youtube.com/embed/C6T5e2VQm8U" frameborder="0" allowfullscreen)
+
+  .page-section.gbv-stats
     %h2 Who's affected?
     - 4.times do |i|
       .gbv-stat{class: ("flipped" if i % 2 != 0)}= image_tag "stats/stat#{i + 1}.jpg"
