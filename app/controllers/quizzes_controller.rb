@@ -21,5 +21,6 @@ class QuizzesController < ApplicationController
   end
 
   def complete
+    self.current_question = 1
   end
 end
