@@ -6,7 +6,7 @@ class QuizzesController < ApplicationController
     @answer   = Quiz.find_answer(current_question)
   end
 
-  def submit
+  def next
     if next_question.nil?
       redirect_to quizzes_complete_path
     else

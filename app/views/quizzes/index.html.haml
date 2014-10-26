@@ -36,7 +36,7 @@
 
       = markdown @answer.content
 
-      = link_to 'Next question', quizzes_submit_path, class: 'next-question button button--quiz'
+      = link_to 'Next question', quizzes_next_path, class: 'next-question button button--quiz'
 
     - unless @question.number == 1
       = link_to 'Start from the beginning', quizzes_reset_path, class: 'reset-quiz'

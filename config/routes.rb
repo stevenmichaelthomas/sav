@@ -12,7 +12,7 @@ Sav::Application.routes.draw do
   resources :quizzes, only: [:index], path: '/quiz'
 
   namespace :quizzes do
-    get :submit, as: :submit
+    get :next, as: :next
     get :complete, as: :complete
     get :reset, as: :reset
   end
