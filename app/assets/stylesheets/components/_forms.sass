@@ -27,7 +27,7 @@ textarea
 label
   font-size: 20px
 
-input[type='submit'], .button
+%button
   +appearance(none)
   margin-top: 20px
   width: 100%
@@ -48,6 +48,19 @@ input[type='submit'], .button
 
     &:disabled
       background: lighten($color-purple, 20%)
+
+.button, input[type='submit']
+  @extend %button
+
+  &.button--quiz
+    background: $color-blue
+    color: white
+
+    &:hover
+      background: darken($color-blue, 6%)
+
+.form-input
+  margin-bottom: $gutter / 2
 
 .checkbox-wrapper
   position: relative

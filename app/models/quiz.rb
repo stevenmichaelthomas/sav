@@ -5,6 +5,7 @@ class Quiz < OpenStruct
 
     YAML.load_file(Rails.root.join('config', 'quiz.yml')).map.with_index(1) {|data, i|
       data['question']['number'] = i
+      data['answer']['number'] = i
 
       @questions.push OpenStruct.new(data['question'])
       @answers.push   OpenStruct.new(data['answer'])
