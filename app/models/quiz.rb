@@ -12,4 +12,12 @@ class Quiz < OpenStruct
 
     @quiz ||= new(questions: @questions, answers: @answers)
   end
+
+  def self.find_question(index)
+    data.questions.find{|q| q.number == index}
+  end
+
+  def self.find_answer(index)
+    data.answers.find{|a| a.number == index}
+  end
 end

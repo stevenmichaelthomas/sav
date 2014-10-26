@@ -5,29 +5,25 @@ module QuizState
     helper_method :current_step, :next_step
   end
 
-  QUESTIONS = %w(1 2 3 4 5)
+  QUESTIONS = 1..21
 
-  def next_step
-    STEPS.at STEPS.index(current_step) + 1
+  def next_question
+    QUESTIONS.at QUESTIONS.index(current_step) + 1
   end
 
-  def previous_step
-    STEPS.at STEPS.index(current_step) - 1
-  end
-
-  def current_step
-    if STEPS.include?(session[:profile_step])
-      session[:profile_step]
+  def current_question
+    if QUESTIONS.include?(session[:quiz_question])
+      session[:quiz_question]
     else
-      STEPS.first
+      QUESTIONS.first
     end
   end
 
   private
 
   def current_step=(step)
-    session[:profile_step] = step
+    session[:quiz_question] = step
   end
 end
 
-ActionController::Base.send(:include, ProfileState)
+ActionController::Base.send(:include, QuizState)
