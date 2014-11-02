@@ -2,7 +2,14 @@
 
 .container
   .page-section
-    %h1 Congratulations!
+    %h1 You're done!
 
     %h2
       You've completed SAV's quiz on dating, sexuality and gender issues.
+
+    %h3
+      Your score was #{@score} out of 21.
+
+    %h4
+      = score_review(@score)
+
