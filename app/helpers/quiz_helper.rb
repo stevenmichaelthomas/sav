@@ -6,11 +6,11 @@ module QuizHelper
       DEFINITELY go back and re-read all of the correct answers. Your life on campus will be WAY
       more awesome once you understand how to respectfully engage with your fellow students."
     elsif score > 10 && score <= 15
-      "Yikes. You’re doing better than some, but you still have a ways to go! You, too, should read all
+      "Hmm. Lots of learning room here. You, too, should read all
       of the articles on the next page. Probably a good idea to check out what the real answers were for
       all those questions you got wrong. It’s time to open those eyes, friend!! Bring on the respect."
     elsif score > 15 && score <= 18
-      "Ok. That’s not too bad. Still a good idea to check out at least some of the articles on the next
+      "Not bad! Still a good idea to check out at least some of the articles on the next
       page, and see what the real answers were for the questions you got wrong. Still, you did well.
       Rock on."
     else
