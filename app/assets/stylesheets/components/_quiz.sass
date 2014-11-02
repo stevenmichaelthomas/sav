@@ -1,0 +1,81 @@
+.reset-quiz
+  display: block
+  margin-top: $gutter
+
+.is-answered
+  form
+    .button.button--quiz
+      display: none
+
+.quiz
+  padding-top: $gutter
+
+.question-content
+  margin-bottom: 20px
+  font-size: 20px
+
+  p
+    font-size: 20px
+    margin-bottom: $gutter / 2
+
+  ul
+    margin: 12px 0
+    list-style-type: disc
+    padding-left: 20px
+
+    > li
+      font-size: 20px
+
+.question-image
+  margin-bottom: $gutter
+
+.button.button--quiz
+  display: inline-block
+  width: auto
+
+.answer
+  margin-top: $gutter
+  display: none
+
+  .is-answered &
+    display: block
+
+  p
+    font-size: 20px
+    margin-bottom: $gutter / 2
+
+  ul
+    margin: 12px 0
+    list-style-type: disc
+    padding-left: 20px
+
+    > li
+      font-size: 20px
+
+.correct
+  color: $color-green
+  display: none
+
+  .is-correct &
+    display: block
+
+.incorrect
+  color: $color-red
+  display: none
+
+  .is-incorrect &
+    display: block
+
+.take-the-quiz
+  background: $color-red
+  color: white
+  font-size: 20px
+  display: block
+  text-align: center
+  padding: $gutter $gutter / 2
+  border-top: 4px solid white
+  border-bottom: 4px solid white
+
+  strong
+    font-weight: bold
+

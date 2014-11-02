@@ -9,6 +9,15 @@ Sav::Application.routes.draw do
   get "pages/support", as: 'support', path: '/peer-support'
   get "pages/contact", as: 'contact', path: '/contact'
 
+  resources :quizzes, only: [:index], path: '/quiz'
+
+  namespace :quizzes do
+    get :next, as: :next
+    get :complete, as: :complete
+    get :reset, as: :reset
+  end
+
+
   resources :events, only: [:index]
   resources :tools, only: [:index], as: :resources, path: '/resources'
 

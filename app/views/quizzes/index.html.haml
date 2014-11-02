@@ -1,0 +1,46 @@
+= content_for :javascripts, javascript_include_tag('quiz')
+
+.container
+  .page-section.page-section--minor
+    %h1 How savvy are you when it comes to dating, sexuality and gender issues?
+
+    - if @question.number == 1
+      %h2
+        Take this quiz to see Canadian cultural norms laid out in all their glory.
+
+      %h4
+        This quiz is designed to promote awareness of cultural beliefs surrounding
+        dating, sexuality, and gender diversity. It has been made by Katherine O'Connor
+        in connection with the Royal Roads University Student Association Students
+        Against Violence project, which was generously funded by Status of Women Canada.
+
+  .page-section.quiz
+    .question
+      %h3 Question #{@question.number}
+
+      .question-content
+        = markdown(@question.content)
+
+      - if @question.image.present?
+        .question-image
+          = image_tag "quiz/#{@question.image}"
+
+    = form_for :question do |f|
+      - @question.options.each_with_index do |option, i|
+        .form-input.question-options
+          = f.label "option_#{i}" do
+            = f.radio_button :option, option, id: "question_option_#{i}"
+            = option
+
+      = f.submit 'Submit answer', class: 'button button--quiz'
+
+    .answer{data: { key: @answer.key }}
+      %h2.correct You are correct!
+      %h2.incorrect Sorry, that isn't correct.
+
+      = markdown @answer.content
+
+      = link_to 'Next question', quizzes_next_path, class: 'next-question button button--quiz'
+
+    - unless @question.number == 1
+      = link_to 'Start from the beginning', quizzes_reset_path, class: 'reset-quiz'
