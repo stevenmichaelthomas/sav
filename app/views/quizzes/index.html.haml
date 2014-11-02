@@ -21,6 +21,10 @@
       .question-content
         = markdown(@question.content)
 
+      - if @question.image.present?
+        .question-image
+          = image_tag "quiz/#{@question.image}"
+
     = form_for :question do |f|
       - @question.options.each_with_index do |option, i|
         .form-input.question-options
