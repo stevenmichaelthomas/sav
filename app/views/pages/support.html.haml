@@ -13,26 +13,14 @@
 
   .page-section.section-support
     .support-this-fall
-      %h2 We are looking for Volunteers!
+      %h2 Coming in December...
       %p.heading-4
-        Do you want to help build something new and exciting at Royal Roads?
-        Are you someone who likes to engage in conversations, learn new things
-        and support their fellow peers? Then may we suggest becoming a part of
-        the new Peer Support Team at Royal Roads!
+        The SAV Peer Support Program will be launching in early December. Thank
+        you to all of those who applied to volunteer with the program.
 
       %p.heading-4
-        RRUSA and SAV are looking for highly motivated, on-campus, second year
-        students who are interested in joining us as Peer Support Volunteers for
-        a seven month pilot project.
-
-      %p.heading-4
-        Training will commence in the fall, but we are looking for applications
-        now. Check out our #{link_to 'position description', @description_url}
-        for more details and if you like what you see, send us your application.
-        We will be hosting an info night in September, but if you have any
-        questions in the meantime, feel free to pop us an email.
-
-      = link_to 'Apply now', "#", class: 'button button-apply'
+        Details about the project will be announced soon, so stay tuned for more
+        information.
 
     .support-right
       = image_tag 'peer-support-logo.jpg'
@@ -43,70 +31,4 @@
           If you are interested in sponsoring the continued development and
           evolution of the SAV Peer Support Project, please
           #{link_to 'contact us', contact_path}. We appreciate your support!
-
-  .page-section.section-application
-    %h2 Application form
-    = form_for @support do |f|
-      = f.label :name
-      = f.text_field :name
-
-      = f.label :email
-      = f.text_field :email
-
-      = f.label :phone, "Phone number"
-      = f.text_field :phone
-
-      = f.label :program
-      = f.text_field :program
-
-      = f.label :why, "Why do you want to be a Peer Support Volunteer?"
-      = f.text_area :why
-
-      = f.label :experience, "Do you have volunteer experience? If so, where did you volunteer and what were your duties?"
-      = f.text_area :experience
-
-      = f.label :gain, "What do you hope to gain from volunteering as a Peer Support Volunteer?"
-      = f.text_area :gain
-
-      = f.label :strengths, "What do you consider your strengths, and how would you bring them to the role of a Peer Support Volunteer?"
-      = f.text_area :strengths
-
-      = f.label :understanding, "What is your understanding about the way Gender Based Violence is affecting men and women differently?"
-      = f.text_area :understanding
-
-      = f.label :challenges, "What do you believe are challenges a Peer Support Volunteer might encounter?"
-      = f.text_area :challenges
-
-      = f.label :confirm, "Please confirm these statements by checking the boxes next to them:"
-
-      .checkbox-wrapper
-        = f.label :training, "I am available to attend the training weekend October 17, 18 and 19th"
-        = f.check_box :training
-
-      .checkbox-wrapper
-        = f.label :responsibilities do
-          I have read the position description and understand that I am responsible for:
-
-          %ul
-            %li Attending monthly debrief sessions
-            %li Completing a group outreach project
-            %li Completing a Group Legacy Project.
-
-        = f.check_box :responsibilities
-
-      .checkbox-wrapper
-        = f.label :honorarium, "I understand that this is a volunteer position with a bi-weekly honourarium for on call hours"
-        = f.check_box :honorarium
-
-      = f.submit 'Send application', class: 'button', data: { disable_with: 'Sending...' }
-
-      .error-message
-        Please fix the highlighted fields and try submitting the form again.
-
-      .ajax-error-message
-        Sorry, something went wrong. Please try again later.
-
-      .success-message
-        Thank you for applying!<br/>
-        Someone will be in touch with you shortly.
 
