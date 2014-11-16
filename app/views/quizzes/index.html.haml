@@ -15,6 +15,10 @@
         Against Violence project, which was generously funded by Status of Women Canada.
 
   .page-section.quiz
+    - if @question.before_image.present?
+      .question-image
+        = image_tag "quiz/#{@question.before_image}"
+
     .question
       %h3 Question #{@question.number}
 

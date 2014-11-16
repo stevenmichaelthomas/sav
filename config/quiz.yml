@@ -1,5 +1,6 @@
 -
   question:
+    before_image: holding-hands.jpg
     content: >
       When someone says a person was "playing hard to get," they usually mean that
       the person was pretending not to be interested in someone romantically (or
@@ -83,6 +84,7 @@
 
 -
   question:
+    before_image: girls-park.jpg
     content: >
       If your Canadian friend says: "My date stood me up!" What do they mean?
     options:
@@ -113,6 +115,7 @@
 
 -
   question:
+    before_image: wedding.jpg
     content: >
       According to Adam Lyons, the self-labeled “dating coach,” you can be pretty
       sure a girl you don't know wants you to approach her and talk to her if she:
@@ -143,6 +146,7 @@
 
 -
   question:
+    before_image: pride.jpg
     content: >
       True or false: In Canada, if you are LGBTQ+ (lesbian, gay, bisexual, trans* [including transsexual, transgender, non-gender etc], queer, etc), you better hide it from your boss, or it's pretty likely you'll be fired on the spot.
 
@@ -158,6 +162,7 @@
       Want more information? Check out this website from the Government of Canada: http://www.parl.gc.ca/content/lop/researchpublications/921-e.htm
 -
   question:
+    before_image: friends-park.jpg
     content: >
       Homosexuality is totally natural – many species of animals (including humans, of course) seek out same-sex partners in nature – and love can lead to marriage. This begs the question: can same-sex couples get married in Canada?
     options:
@@ -229,6 +234,7 @@
 
 -
   question:
+    before_image: pink.jpg
     content: >
       True or False: If a man wears pink, it means that he is gay.
     options:
@@ -245,6 +251,7 @@
 
 -
   question:
+    before_image: happy-couple.jpg
     content: >
       If someone says they’re bisexual, does that mean they’re more likely to cheat on you?
     options:
@@ -274,6 +281,7 @@
 
 -
   question:
+    before_image: holding-girl.jpg
     content: >
       Ok... so what the heck are gender identity and gender roles then?
     options:
