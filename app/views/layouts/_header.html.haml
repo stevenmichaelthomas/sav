@@ -20,4 +20,5 @@
         = link_to "app", "https://itunes.apple.com/ca/app/oohlala-campus-app-events/id389713598", target: "_blank"
         = link_to "contact", contact_path
 
-    = link_to "Take our quiz!", quizzes_path, class: 'quiz-cta'
+    - unless controller_name == 'quizzes'
+      = link_to "Take our quiz!", quizzes_path, class: 'quiz-cta'
