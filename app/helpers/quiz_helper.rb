@@ -1,8 +1,8 @@
 module QuizHelper
   def score_review(score)
-    if score <= 10
-      "Um... what? Friend, you’ve got some reading to do!! Check out ALL of the articles on the next
-      page (as in: get your butt to the library, and start reading the full articles RIGHT NOW!), and
+    review = if score <= 10
+      "Um... what? Friend, you’ve got some reading to do!! Check out ALL of the articles on our #{link_to 'resources page', resources_path}
+      (as in: get your butt to the library, and start reading the full articles RIGHT NOW!), and
       DEFINITELY go back and re-read all of the correct answers. Your life on campus will be WAY
       more awesome once you understand how to respectfully engage with your fellow students."
     elsif score > 10 && score <= 15
@@ -18,6 +18,6 @@ module QuizHelper
       the good information you’ve got tucked away in your brain. We need more people like you on
       campus! You might be interested in the articles on the next page – there’s always room to learn
       more – but, friend: I’m proud of you."
-    end
+    end.html_safe
   end
 end
