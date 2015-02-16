@@ -23,7 +23,9 @@
         - @events.each do |event|
           .event
             .event-column.event-date= event.date_str
-            .event-column.event-name= event.name
+            .event-column.event-name
+              %strong= event.name
+              %p= event.description
             .event-column.event-location= event.location
             .event-column.event-address= gmaps_link(event.address)
 
