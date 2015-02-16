@@ -25,7 +25,7 @@
             .event-column.event-date= event.date_str
             .event-column.event-name
               %strong= event.name
-              %p= event.description
+              %p= event.description.presence
             .event-column.event-location= event.location
             .event-column.event-address= gmaps_link(event.address)
 
