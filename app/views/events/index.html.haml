@@ -24,7 +24,7 @@
             .event-column.event-date= event.date_str
             .event-column.event-name
               %strong= event.name
-              %p= event.description.presence
+              %p= simple_format event.description.presence
             .event-column.event-location= event.location
 
     - else
