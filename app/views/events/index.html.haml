@@ -17,7 +17,6 @@
           .event-column Date
           .event-column Name
           .event-column Location
-          .event-column Address
 
 
         - @events.each do |event|
@@ -27,7 +26,6 @@
               %strong= event.name
               %p= event.description.presence
             .event-column.event-location= event.location
-            .event-column.event-address= gmaps_link(event.address)
 
     - else
       %p.events-empty
