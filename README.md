@@ -22,3 +22,11 @@ events, resources and view Peer Support applications.
 To view the admin screen, visit `studentsagainstviolence.com/admin` and enter
 the username and password. From here you can add, delete and update entries
 in any of the above categories.
+
+#### Pushing changes to the site
+The site is hosted on Heroku. To push changes, you'll need to add Heroku as a
+remote to github by entering the following:
+
+```
+git remote add heroku git@heroku.com:savproject.git
+```
