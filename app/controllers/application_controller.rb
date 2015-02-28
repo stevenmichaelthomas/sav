@@ -3,7 +3,17 @@ class ApplicationController < ActionController::Base
 
   before_filter :add_classes
 
-  helper_method :body_classes
+  helper_method :body_classes, :page_content_for
+
+  def pages
+    @pages ||= Page.all
+  end
+
+  def page_content_for(name)
+    @page = pages.find_by(name: name)
+
+    @page.present? ? @page.text : ''
+  end
 
   def body_classes
     @_body_classes ||= []

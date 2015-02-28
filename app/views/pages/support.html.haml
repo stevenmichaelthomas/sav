@@ -15,40 +15,11 @@
 
   .page-section.section-support
     .support-this-fall
-      %h2.heading-3
-        Do you need someone to talk to?
-        %br
-        %br
-        Are you wondering about what resources are available to you?
-        %br
-        %br
-        Do you need held finding resources on campus?
-
-      %p.heading-4
-        The Peer Support team is here to provide you with social, emotional and
-        academic support for all Royal Roads Students. They are specially
-        trained in reflective listening and have a vast knowledge of the
-        on-campus and off-campus resources that are available to students.
-
-      %p.heading-4
-        Click the chat button to be connected live to one of our Peer Support
-        Volunteers or come meet us in the Habitat Cafe every Wednesday over the
-        lunch hour.
-
-      %p.heading-4
-        = link_to 'View our confidentiality policy', 'https://s3-us-west-2.amazonaws.com/sav-project/confidentiality.pdf', target: '_blank'
-
-      %p.heading-4
-        = link_to 'Download our peer support resources', 'https://s3-us-west-2.amazonaws.com/sav-project/peer-support-resources.pdf', target: '_blank'
-
+      = markdown page_content_for('peer_support')
 
     .support-right
       = image_tag 'peer-support-logo.jpg'
 
       .support-sponsor
-        %h2 Sponsor us!
-        %p.heading-4
-          If you are interested in sponsoring the continued development and
-          evolution of the SAV Peer Support Project, please
-          #{link_to 'contact us', contact_path}. We appreciate your support!
+        = markdown page_content_for('sponsor_us')
 
