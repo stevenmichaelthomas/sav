@@ -1,22 +1,24 @@
 ## RRUSA - Students Against Violence Project
 
-### Initial application architecture
+### App setup
 
-#### Front-end
-* Bourbon
-* Neat grid
+1. Ensure Ruby `2.1.1` is installed on your system. RBENV is suggested to manage
+your Ruby version
 
-#### Back-end
-__Models__
-* Event (Date, time, title)
-* Resource (Name, summary, URL)
-* Contact (singleton with various contact attributes)
-* Quotes (quote, source)
-* Stats (number_of, total, content)
+2. `git clone git@github.com:stevenmichaelthomas/sav.git`
 
-__Controller only__
-* Pages
+3. `bundle install` to get all require dependencies for the project
+
+4. `rake db:create db:schema:load db:seed` to setup the database.
+
+4. `foreman server` to start the server
+
+5. `localhost:3000` to view the site.
 
 #### Maintenance
-This project will use ActiveAdmin to manage calendar events, resources, contact
-information and other information.
+This project uses ActiveAdmin as a pseudo-CMS. You can manage page text,
+events, resources and view Peer Support applications.
+
+To view the admin screen, visit `studentsagainstviolence.com/admin` and enter
+the username and password. From here you can add, delete and update entries
+in any of the above categories.
